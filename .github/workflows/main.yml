@@ -6,7 +6,7 @@ name: CIFSyntaxandStyleCheck
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ test-new-github-actions ]
   pull_request:
     branches: [ master ]
   workflow_dispatch:   
@@ -35,7 +35,7 @@ jobs:
           uses: actions/checkout@v2
 
         - name: check_ddlm
-          uses: COMCIFS/dictionary_check_action@main
+          uses: vaitkus/dictionary_check_action@migrate-to-using-cod-tools-from-repo
           id: ddlm_check
   layout:
     runs-on: ubuntu-latest
