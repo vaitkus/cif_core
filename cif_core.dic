@@ -10,7 +10,7 @@ data_CORE_DIC
     _dictionary.title             CORE_DIC
     _dictionary.class             Instance
     _dictionary.version           3.1.0
-    _dictionary.date              2021-07-26
+    _dictionary.date              2021-09-24
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/cif_core/master/cif_core.dic
     _dictionary.ddl_conformance   4.0.1
@@ -1173,6 +1173,23 @@ save_diffrn_orient_refln.angle_chi
 
 save_
 
+save_diffrn_orient_refln.angle_chi_su
+
+    _definition.id                '_diffrn_orient_refln.angle_chi_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _diffrn_orient_refln.angle_chi.
+;
+    _name.category_id             diffrn_orient_refln
+    _name.object_id               angle_chi_su
+    _name.linked_item_id          '_diffrn_orient_refln.angle_chi'
+    _units.code                   degrees
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_diffrn_orient_refln.angle_kappa
 
     _definition.id                '_diffrn_orient_refln.angle_kappa'
@@ -1181,6 +1198,23 @@ save_diffrn_orient_refln.angle_kappa
     _name.object_id               angle_kappa
 
     _import.get                   [{'file':templ_attr.cif  'save':orient_angle}]
+
+save_
+
+save_diffrn_orient_refln.angle_kappa_su
+
+    _definition.id                '_diffrn_orient_refln.angle_kappa_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _diffrn_orient_refln.angle_kappa.
+;
+    _name.category_id             diffrn_orient_refln
+    _name.object_id               angle_kappa_su
+    _name.linked_item_id          '_diffrn_orient_refln.angle_kappa'
+    _units.code                   degrees
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -1195,6 +1229,23 @@ save_diffrn_orient_refln.angle_omega
 
 save_
 
+save_diffrn_orient_refln.angle_omega_su
+
+    _definition.id                '_diffrn_orient_refln.angle_omega_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _diffrn_orient_refln.angle_omega.
+;
+    _name.category_id             diffrn_orient_refln
+    _name.object_id               angle_omega_su
+    _name.linked_item_id          '_diffrn_orient_refln.angle_omega'
+    _units.code                   degrees
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_diffrn_orient_refln.angle_phi
 
     _definition.id                '_diffrn_orient_refln.angle_phi'
@@ -1203,6 +1254,23 @@ save_diffrn_orient_refln.angle_phi
     _name.object_id               angle_phi
 
     _import.get                   [{'file':templ_attr.cif  'save':orient_angle}]
+
+save_
+
+save_diffrn_orient_refln.angle_phi_su
+
+    _definition.id                '_diffrn_orient_refln.angle_phi_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _diffrn_orient_refln.angle_phi.
+;
+    _name.category_id             diffrn_orient_refln
+    _name.object_id               angle_phi_su
+    _name.linked_item_id          '_diffrn_orient_refln.angle_phi'
+    _units.code                   degrees
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -1217,6 +1285,23 @@ save_diffrn_orient_refln.angle_psi
 
 save_
 
+save_diffrn_orient_refln.angle_psi_su
+
+    _definition.id                '_diffrn_orient_refln.angle_psi_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _diffrn_orient_refln.angle_psi.
+;
+    _name.category_id             diffrn_orient_refln
+    _name.object_id               angle_psi_su
+    _name.linked_item_id          '_diffrn_orient_refln.angle_psi'
+    _units.code                   degrees
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_diffrn_orient_refln.angle_theta
 
     _definition.id                '_diffrn_orient_refln.angle_theta'
@@ -1225,6 +1310,23 @@ save_diffrn_orient_refln.angle_theta
     _name.object_id               angle_theta
 
     _import.get                   [{'file':templ_attr.cif  'save':orient_angle}]
+
+save_
+
+save_diffrn_orient_refln.angle_theta_su
+
+    _definition.id                '_diffrn_orient_refln.angle_theta_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _diffrn_orient_refln.angle_theta.
+;
+    _name.category_id             diffrn_orient_refln
+    _name.object_id               angle_theta_su
+    _name.linked_item_id          '_diffrn_orient_refln.angle_theta'
+    _units.code                   degrees
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -1656,7 +1758,7 @@ save_diffrn_radiation_wavelength.value_su
          '_diffrn_radiation_wavelength_su'
          '_diffrn_radiation_wavelength.wavelength_su'
 
-    _definition.update            2019-04-02
+    _definition.update            2021-08-03
     _description.text
 ;
     Standard uncertainty of the wavelength of radiation used in diffraction
@@ -1669,7 +1771,7 @@ save_diffrn_radiation_wavelength.value_su
     _type.source                  Related
     _type.container               Single
     _type.contents                Real
-    _units.code                   none
+    _units.code                   angstroms
 
 save_
 
@@ -1825,6 +1927,23 @@ save_diffrn_refln.counts_bg_1
 
 save_
 
+save_diffrn_refln.counts_bg_1_su
+
+    _definition.id                '_diffrn_refln.counts_bg_1_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _diffrn_refln.counts_bg_1.
+;
+    _name.category_id             diffrn_refln
+    _name.object_id               counts_bg_1_su
+    _name.linked_item_id          '_diffrn_refln.counts_bg_1'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_diffrn_refln.counts_bg_2
 
     _definition.id                '_diffrn_refln.counts_bg_2'
@@ -1833,6 +1952,23 @@ save_diffrn_refln.counts_bg_2
     _name.object_id               counts_bg_2
 
     _import.get                   [{'file':templ_attr.cif  'save':diffr_counts}]
+
+save_
+
+save_diffrn_refln.counts_bg_2_su
+
+    _definition.id                '_diffrn_refln.counts_bg_2_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _diffrn_refln.counts_bg_2.
+;
+    _name.category_id             diffrn_refln
+    _name.object_id               counts_bg_2_su
+    _name.linked_item_id          '_diffrn_refln.counts_bg_2'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -1847,6 +1983,23 @@ save_diffrn_refln.counts_net
 
 save_
 
+save_diffrn_refln.counts_net_su
+
+    _definition.id                '_diffrn_refln.counts_net_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _diffrn_refln.counts_net.
+;
+    _name.category_id             diffrn_refln
+    _name.object_id               counts_net_su
+    _name.linked_item_id          '_diffrn_refln.counts_net'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_diffrn_refln.counts_peak
 
     _definition.id                '_diffrn_refln.counts_peak'
@@ -1858,6 +2011,23 @@ save_diffrn_refln.counts_peak
 
 save_
 
+save_diffrn_refln.counts_peak_su
+
+    _definition.id                '_diffrn_refln.counts_peak_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _diffrn_refln.counts_peak.
+;
+    _name.category_id             diffrn_refln
+    _name.object_id               counts_peak_su
+    _name.linked_item_id          '_diffrn_refln.counts_peak'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_diffrn_refln.counts_total
 
     _definition.id                '_diffrn_refln.counts_total'
@@ -1866,6 +2036,23 @@ save_diffrn_refln.counts_total
     _name.object_id               counts_total
 
     _import.get                   [{'file':templ_attr.cif  'save':diffr_counts}]
+
+save_
+
+save_diffrn_refln.counts_total_su
+
+    _definition.id                '_diffrn_refln.counts_total_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _diffrn_refln.counts_total.
+;
+    _name.category_id             diffrn_refln
+    _name.object_id               counts_total_su
+    _name.linked_item_id          '_diffrn_refln.counts_total'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -3137,6 +3324,23 @@ save_diffrn_scale_group.i_net
 
 save_
 
+save_diffrn_scale_group.i_net_su
+
+    _definition.id                '_diffrn_scale_group.I_net_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _diffrn_scale_group.I_net.
+;
+    _name.category_id             diffrn_scale_group
+    _name.object_id               I_net_su
+    _name.linked_item_id          '_diffrn_scale_group.I_net'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_DIFFRN_SOURCE
 
     _definition.id                DIFFRN_SOURCE
@@ -3224,11 +3428,11 @@ save_diffrn_source.details
 
     _definition.id                '_diffrn_source.details'
     _alias.definition_id          '_diffrn_source_details'
-    _definition.update            2012-11-26
+    _definition.update            2021-08-18
     _description.text
 ;
     A description of special aspects of the source not covered by
-    other datanames.
+    other data items.
 ;
     _name.category_id             diffrn_source
     _name.object_id               details
@@ -3486,6 +3690,23 @@ save_diffrn_standard.decay_percent
 
 save_
 
+save_diffrn_standard.decay_percent_su
+
+    _definition.id                '_diffrn_standard.decay_percent_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _diffrn_standard.decay_percent.
+;
+    _name.category_id             diffrn_standard
+    _name.object_id               decay_percent_su
+    _name.linked_item_id          '_diffrn_standard.decay_percent'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_diffrn_standard.interval_count
 
     _definition.id                '_diffrn_standard.interval_count'
@@ -3586,6 +3807,23 @@ save_diffrn_standard.scale_su_average
     _type.contents                Real
     _enumeration.range            0.0:
     _units.code                   none
+
+save_
+
+save_diffrn_standard.scale_su_average_su
+
+    _definition.id                '_diffrn_standard.scale_su_average_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _diffrn_standard.scale_su_average.
+;
+    _name.category_id             diffrn_standard
+    _name.object_id               scale_su_average_su
+    _name.linked_item_id          '_diffrn_standard.scale_su_average'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -3752,6 +3990,31 @@ save_refln.a_calc
 
 save_
 
+save_refln.a_calc_su
+
+    _definition.id                '_refln.A_calc_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _refln.A_calc.
+;
+    _name.category_id             refln
+    _name.object_id               A_calc_su
+    _name.linked_item_id          '_refln.A_calc'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _method.purpose               Definition
+    _method.expression
+;
+         If (_diffrn_radiation.probe == "neutron")  _units.code =
+    "femtometres" Else If (_diffrn_radiation.probe == "electron")
+    _units.code =  "volts" Else
+    _units.code =  "electrons"
+;
+
+save_
+
 save_refln.a_meas
 
     _definition.id                '_refln.A_meas'
@@ -3767,6 +4030,30 @@ save_refln.a_meas
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
+    _method.purpose               Definition
+    _method.expression
+;
+         If (_diffrn_radiation.probe == "neutron")  _units.code =  "femtometres"
+    Else If (_diffrn_radiation.probe == "electron") _units.code =  "volts"
+    Else                                            _units.code =  "electrons"
+;
+
+save_
+
+save_refln.a_meas_su
+
+    _definition.id                '_refln.A_meas_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _refln.A_meas.
+;
+    _name.category_id             refln
+    _name.object_id               A_meas_su
+    _name.linked_item_id          '_refln.A_meas'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _method.purpose               Definition
     _method.expression
 ;
@@ -3810,6 +4097,31 @@ save_refln.b_calc
 
 save_
 
+save_refln.b_calc_su
+
+    _definition.id                '_refln.B_calc_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _refln.B_calc.
+;
+    _name.category_id             refln
+    _name.object_id               B_calc_su
+    _name.linked_item_id          '_refln.B_calc'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _method.purpose               Definition
+    _method.expression
+;
+         If (_diffrn_radiation.probe == "neutron")  _units.code =
+    "femtometres" Else If (_diffrn_radiation.probe == "electron")
+    _units.code =  "volts" Else
+    _units.code =  "electrons"
+;
+
+save_
+
 save_refln.b_meas
 
     _definition.id                '_refln.B_meas'
@@ -3825,6 +4137,30 @@ save_refln.b_meas
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
+    _method.purpose               Definition
+    _method.expression
+;
+         If (_diffrn_radiation.probe == "neutron")  _units.code =  "femtometres"
+    Else If (_diffrn_radiation.probe == "electron") _units.code =  "volts"
+    Else                                            _units.code =  "electrons"
+;
+
+save_
+
+save_refln.b_meas_su
+
+    _definition.id                '_refln.B_meas_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _refln.B_meas.
+;
+    _name.category_id             refln
+    _name.object_id               B_meas_su
+    _name.linked_item_id          '_refln.B_meas'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _method.purpose               Definition
     _method.expression
 ;
@@ -3921,6 +4257,31 @@ save_refln.f_calc
 
 save_
 
+save_refln.f_calc_su
+
+    _definition.id                '_refln.F_calc_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _refln.F_calc.
+;
+    _name.category_id             refln
+    _name.object_id               F_calc_su
+    _name.linked_item_id          '_refln.F_calc'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _method.purpose               Definition
+    _method.expression
+;
+         If (_diffrn_radiation.probe == "neutron")  _units.code =
+    "femtometres" Else If (_diffrn_radiation.probe == "electron")
+    _units.code =  "volts" Else
+    _units.code =  "electrons"
+;
+
+save_
+
 save_refln.f_complex
 
     _definition.id                '_refln.F_complex'
@@ -3968,6 +4329,31 @@ save_refln.f_complex
                 fc +=  f * t * ExpImag(TwoPi *( h *( s.R * a.fract_xyz + s.T)))
          }  }
                 _refln.F_complex  =   fc / _space_group.multiplicity
+;
+
+save_
+
+save_refln.f_complex_su
+
+    _definition.id                '_refln.F_complex_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _refln.F_complex.
+;
+    _name.category_id             refln
+    _name.object_id               F_complex_su
+    _name.linked_item_id          '_refln.F_complex'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _method.purpose               Definition
+    _method.expression
+;
+         If (_diffrn_radiation.probe == "neutron")  _units.code =
+    "femtometres" Else If (_diffrn_radiation.probe == "electron")
+    _units.code =  "volts" Else
+    _units.code =  "electrons"
 ;
 
 save_
@@ -4046,6 +4432,32 @@ save_refln.f_squared_calc
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
+    _method.purpose               Definition
+    _method.expression
+;
+    If      (_diffrn_radiation.probe == "neutron")
+                                         _units.code =  "femtometre_squared"
+    Else If (_diffrn_radiation.probe == "electron")
+                                         _units.code =  "volt_squared"
+    Else                                 _units.code =  "electron_squared"
+;
+
+save_
+
+save_refln.f_squared_calc_su
+
+    _definition.id                '_refln.F_squared_calc_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _refln.F_squared_calc.
+;
+    _name.category_id             refln
+    _name.object_id               F_squared_calc_su
+    _name.linked_item_id          '_refln.F_squared_calc'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _method.purpose               Definition
     _method.expression
 ;
@@ -4317,6 +4729,23 @@ save_refln.intensity_calc
 
 save_
 
+save_refln.intensity_calc_su
+
+    _definition.id                '_refln.intensity_calc_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _refln.intensity_calc.
+;
+    _name.category_id             refln
+    _name.object_id               intensity_calc_su
+    _name.linked_item_id          '_refln.intensity_calc'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_refln.intensity_meas
 
     _definition.id                '_refln.intensity_meas'
@@ -4432,6 +4861,23 @@ save_refln.phase_calc
 
 save_
 
+save_refln.phase_calc_su
+
+    _definition.id                '_refln.phase_calc_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _refln.phase_calc.
+;
+    _name.category_id             refln
+    _name.object_id               phase_calc_su
+    _name.linked_item_id          '_refln.phase_calc'
+    _units.code                   degrees
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_refln.phase_meas
 
     _definition.id                '_refln.phase_meas'
@@ -4451,6 +4897,23 @@ save_refln.phase_meas
     _type.contents                Real
     _enumeration.range            0.:360.
     _units.code                   degrees
+
+save_
+
+save_refln.phase_meas_su
+
+    _definition.id                '_refln.phase_meas_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _refln.phase_meas.
+;
+    _name.category_id             refln
+    _name.object_id               phase_meas_su
+    _name.linked_item_id          '_refln.phase_meas'
+    _units.code                   degrees
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -5432,6 +5895,40 @@ save_reflns_scale.meas_f_squared
 
 save_
 
+save_reflns_scale.meas_f_squared_su
+
+    _definition.id                '_reflns_scale.meas_F_squared_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _reflns_scale.meas_F_squared.
+;
+    _name.category_id             reflns_scale
+    _name.object_id               meas_F_squared_su
+    _name.linked_item_id          '_reflns_scale.meas_F_squared'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
+save_reflns_scale.meas_f_su
+
+    _definition.id                '_reflns_scale.meas_F_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _reflns_scale.meas_F.
+;
+    _name.category_id             reflns_scale
+    _name.object_id               meas_F_su
+    _name.linked_item_id          '_reflns_scale.meas_F'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_reflns_scale.meas_intensity
 
     _definition.id                '_reflns_scale.meas_intensity'
@@ -5449,6 +5946,23 @@ save_reflns_scale.meas_intensity
     _type.contents                Real
     _enumeration.range            0.0:
     _units.code                   none
+
+save_
+
+save_reflns_scale.meas_intensity_su
+
+    _definition.id                '_reflns_scale.meas_intensity_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _reflns_scale.meas_intensity.
+;
+    _name.category_id             reflns_scale
+    _name.object_id               meas_intensity_su
+    _name.linked_item_id          '_reflns_scale.meas_intensity'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -6026,6 +6540,23 @@ save_exptl.transmission_factor_max
 
 save_
 
+save_exptl.transmission_factor_max_su
+
+    _definition.id                '_exptl.transmission_factor_max_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _exptl.transmission_factor_max.
+;
+    _name.category_id             exptl
+    _name.object_id               transmission_factor_max_su
+    _name.linked_item_id          '_exptl.transmission_factor_max'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_exptl.transmission_factor_min
 
     _definition.id                '_exptl.transmission_factor_min'
@@ -6048,6 +6579,23 @@ save_exptl.transmission_factor_min
     _type.contents                Real
     _enumeration.range            0.0:1.0
     _units.code                   none
+
+save_
+
+save_exptl.transmission_factor_min_su
+
+    _definition.id                '_exptl.transmission_factor_min_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _exptl.transmission_factor_min.
+;
+    _name.category_id             exptl
+    _name.object_id               transmission_factor_min_su
+    _name.linked_item_id          '_exptl.transmission_factor_min'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -6191,12 +6739,12 @@ save_
 save_cell.convert_uij_to_betaij
 
     _definition.id                '_cell.convert_Uij_to_betaij'
-    _definition.update            2021-07-07
+    _definition.update            2021-09-24
     _description.text
 ;
     The reciprocal space matrix for converting the U(ij) matrix of
     atomic displacement parameters to a dimensionless beta(IJ) matrix.
-    The adp factor in a structure factor expression:
+    The ADP factor in a structure factor expression:
 
     t = exp -2pi**2 ( U11    h h a* a* + ...... 2 U23    k l b* c* )
     t = exp - 0.25  ( B11    h h a* a* + ...... 2 B23    k l b* c* )
@@ -6226,6 +6774,26 @@ save_cell.convert_uij_to_betaij
                 [ 0, c.reciprocal_length_b, 0 ],
                     [ 0, 0, c.reciprocal_length_c ]])
 ;
+
+save_
+
+save_cell.convert_uij_to_betaij_su
+
+    _definition.id                '_cell.convert_Uij_to_betaij_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _cell.convert_Uij_to_betaij.
+;
+    _name.category_id             cell
+    _name.object_id               convert_Uij_to_betaij_su
+    _name.linked_item_id          '_cell.convert_Uij_to_betaij'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3,3]'
+    _type.contents                Real
+    _units.code                   reciprocal_angstroms
 
 save_
 
@@ -6261,6 +6829,26 @@ save_cell.convert_uiso_to_uij
     Cosd(c.reciprocal_angle_alpha) ],                        [
     Cosd(c.reciprocal_angle_beta), Cosd(c.reciprocal_angle_alpha), 1.  ]]
 ;
+
+save_
+
+save_cell.convert_uiso_to_uij_su
+
+    _definition.id                '_cell.convert_Uiso_to_Uij_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _cell.convert_Uiso_to_Uij.
+;
+    _name.category_id             cell
+    _name.object_id               convert_Uiso_to_Uij_su
+    _name.linked_item_id          '_cell.convert_Uiso_to_Uij'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3,3]'
+    _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -6794,6 +7382,26 @@ save_cell.reciprocal_metric_tensor
 
 save_
 
+save_cell.reciprocal_metric_tensor_su
+
+    _definition.id                '_cell.reciprocal_metric_tensor_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _cell.reciprocal_metric_tensor.
+;
+    _name.category_id             cell
+    _name.object_id               reciprocal_metric_tensor_su
+    _name.linked_item_id          '_cell.reciprocal_metric_tensor'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3,3]'
+    _type.contents                Real
+    _units.code                   reciprocal_angstrom_squared
+
+save_
+
 save_cell.reciprocal_orthogonal_matrix
 
     _definition.id                '_cell.reciprocal_orthogonal_matrix'
@@ -6824,6 +7432,26 @@ save_cell.reciprocal_orthogonal_matrix
 
 save_
 
+save_cell.reciprocal_orthogonal_matrix_su
+
+    _definition.id                '_cell.reciprocal_orthogonal_matrix_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _cell.reciprocal_orthogonal_matrix.
+;
+    _name.category_id             cell
+    _name.object_id               reciprocal_orthogonal_matrix_su
+    _name.linked_item_id          '_cell.reciprocal_orthogonal_matrix'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3,3]'
+    _type.contents                Real
+    _units.code                   reciprocal_angstroms
+
+save_
+
 save_cell.reciprocal_vector_a
 
     _definition.id                '_cell.reciprocal_vector_a'
@@ -6847,6 +7475,26 @@ save_cell.reciprocal_vector_a
 
     _cell.reciprocal_vector_a = c.vector_b ^ c.vector_c / _cell.volume
 ;
+
+save_
+
+save_cell.reciprocal_vector_a_su
+
+    _definition.id                '_cell.reciprocal_vector_a_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _cell.reciprocal_vector_a.
+;
+    _name.category_id             cell
+    _name.object_id               reciprocal_vector_a_su
+    _name.linked_item_id          '_cell.reciprocal_vector_a'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   reciprocal_angstroms
 
 save_
 
@@ -6876,6 +7524,26 @@ save_cell.reciprocal_vector_b
 
 save_
 
+save_cell.reciprocal_vector_b_su
+
+    _definition.id                '_cell.reciprocal_vector_b_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _cell.reciprocal_vector_b.
+;
+    _name.category_id             cell
+    _name.object_id               reciprocal_vector_b_su
+    _name.linked_item_id          '_cell.reciprocal_vector_b'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   reciprocal_angstroms
+
+save_
+
 save_cell.reciprocal_vector_c
 
     _definition.id                '_cell.reciprocal_vector_c'
@@ -6899,6 +7567,26 @@ save_cell.reciprocal_vector_c
 
     _cell.reciprocal_vector_c = c.vector_a ^ c.vector_b / _cell.volume
 ;
+
+save_
+
+save_cell.reciprocal_vector_c_su
+
+    _definition.id                '_cell.reciprocal_vector_c_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _cell.reciprocal_vector_c.
+;
+    _name.category_id             cell
+    _name.object_id               reciprocal_vector_c_su
+    _name.linked_item_id          '_cell.reciprocal_vector_c'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   reciprocal_angstroms
 
 save_
 
@@ -6950,6 +7638,26 @@ save_cell.vector_a
 
 save_
 
+save_cell.vector_a_su
+
+    _definition.id                '_cell.vector_a_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _cell.vector_a.
+;
+    _name.category_id             cell
+    _name.object_id               vector_a_su
+    _name.linked_item_id          '_cell.vector_a'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   angstroms
+
+save_
+
 save_cell.vector_b
 
     _definition.id                '_cell.vector_b'
@@ -6974,6 +7682,26 @@ save_cell.vector_b
 
 save_
 
+save_cell.vector_b_su
+
+    _definition.id                '_cell.vector_b_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _cell.vector_b.
+;
+    _name.category_id             cell
+    _name.object_id               vector_b_su
+    _name.linked_item_id          '_cell.vector_b'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   angstroms
+
+save_
+
 save_cell.vector_c
 
     _definition.id                '_cell.vector_c'
@@ -6995,6 +7723,26 @@ save_cell.vector_c
 ;
     _cell.vector_c = _cell.orthogonal_matrix * Matrix([0,0,1])
 ;
+
+save_
+
+save_cell.vector_c_su
+
+    _definition.id                '_cell.vector_c_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _cell.vector_c.
+;
+    _name.category_id             cell
+    _name.object_id               vector_c_su
+    _name.linked_item_id          '_cell.vector_c'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   angstroms
 
 save_
 
@@ -7376,6 +8124,23 @@ save_cell_measurement_refln.theta
 
 save_
 
+save_cell_measurement_refln.theta_su
+
+    _definition.id                '_cell_measurement_refln.theta_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _cell_measurement_refln.theta.
+;
+    _name.category_id             cell_measurement_refln
+    _name.object_id               theta_su
+    _name.linked_item_id          '_cell_measurement_refln.theta'
+    _units.code                   degrees
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_CHEMICAL
 
     _definition.id                CHEMICAL
@@ -7502,6 +8267,23 @@ save_chemical.enantioexcess_bulk
 
 save_
 
+save_chemical.enantioexcess_bulk_su
+
+    _definition.id                '_chemical.enantioexcess_bulk_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _chemical.enantioexcess_bulk.
+;
+    _name.category_id             chemical
+    _name.object_id               enantioexcess_bulk_su
+    _name.linked_item_id          '_chemical.enantioexcess_bulk'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_chemical.enantioexcess_bulk_technique
 
     _definition.id                '_chemical.enantioexcess_bulk_technique'
@@ -7570,6 +8352,23 @@ save_chemical.enantioexcess_crystal
 
 save_
 
+save_chemical.enantioexcess_crystal_su
+
+    _definition.id                '_chemical.enantioexcess_crystal_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _chemical.enantioexcess_crystal.
+;
+    _name.category_id             chemical
+    _name.object_id               enantioexcess_crystal_su
+    _name.linked_item_id          '_chemical.enantioexcess_crystal'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_chemical.enantioexcess_crystal_technique
 
     _definition.id                '_chemical.enantioexcess_crystal_technique'
@@ -7608,9 +8407,9 @@ save_
 
 save_chemical.identifier_inchi
 
-    _definition.id                '_chemical.identifier_inchi'
-    _alias.definition_id          '_chemical_identifier_inchi'
-    _definition.update            2013-01-18
+    _definition.id                '_chemical.identifier_InChI'
+    _alias.definition_id          '_chemical_identifier_InChI'
+    _definition.update            2021-09-24
     _description.text
 ;
     The IUPAC International Chemical Identifier (InChI) is a
@@ -7622,7 +8421,7 @@ save_chemical.identifier_inchi
          http://www.iupac.org/inchi/
 ;
     _name.category_id             chemical
-    _name.object_id               identifier_inchi
+    _name.object_id               identifier_InChI
     _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
@@ -7635,9 +8434,9 @@ save_
 
 save_chemical.identifier_inchi_key
 
-    _definition.id                '_chemical.identifier_inchi_key'
-    _alias.definition_id          '_chemical_identifier_inchi_key'
-    _definition.update            2013-01-18
+    _definition.id                '_chemical.identifier_InChI_key'
+    _alias.definition_id          '_chemical_identifier_InChI_key'
+    _definition.update            2021-09-24
     _description.text
 ;
     The InChIKey is a compact hashed version of the full InChI
@@ -7646,7 +8445,7 @@ save_chemical.identifier_inchi_key
     http://www.iupac.org/inchi/
 ;
     _name.category_id             chemical
-    _name.object_id               identifier_inchi_key
+    _name.object_id               identifier_InChI_key
     _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
@@ -7658,16 +8457,16 @@ save_
 
 save_chemical.identifier_inchi_version
 
-    _definition.id                '_chemical.identifier_inchi_version'
-    _alias.definition_id          '_chemical_identifier_inchi_version'
-    _definition.update            2013-01-18
+    _definition.id                '_chemical.identifier_InChI_version'
+    _alias.definition_id          '_chemical_identifier_InChI_version'
+    _definition.update            2021-09-24
     _description.text
 ;
     Version number of the InChI standard to which the associated
     chemical identifier string applies.
 ;
     _name.category_id             chemical
-    _name.object_id               identifier_inchi_version
+    _name.object_id               identifier_InChI_version
     _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
@@ -7717,6 +8516,23 @@ save_chemical.melting_point_gt
 
 save_
 
+save_chemical.melting_point_gt_su
+
+    _definition.id                '_chemical.melting_point_gt_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _chemical.melting_point_gt.
+;
+    _name.category_id             chemical
+    _name.object_id               melting_point_gt_su
+    _name.linked_item_id          '_chemical.melting_point_gt'
+    _units.code                   kelvins
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_chemical.melting_point_lt
 
     _definition.id                '_chemical.melting_point_lt'
@@ -7735,6 +8551,40 @@ save_chemical.melting_point_lt
     _type.contents                Real
     _enumeration.range            0.0:
     _units.code                   kelvins
+
+save_
+
+save_chemical.melting_point_lt_su
+
+    _definition.id                '_chemical.melting_point_lt_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _chemical.melting_point_lt.
+;
+    _name.category_id             chemical
+    _name.object_id               melting_point_lt_su
+    _name.linked_item_id          '_chemical.melting_point_lt'
+    _units.code                   kelvins
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
+save_chemical.melting_point_su
+
+    _definition.id                '_chemical.melting_point_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _chemical.melting_point.
+;
+    _name.category_id             chemical
+    _name.object_id               melting_point_su
+    _name.linked_item_id          '_chemical.melting_point'
+    _units.code                   kelvins
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -7983,6 +8833,23 @@ save_chemical.temperature_decomposition_gt
 
 save_
 
+save_chemical.temperature_decomposition_gt_su
+
+    _definition.id                '_chemical.temperature_decomposition_gt_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _chemical.temperature_decomposition_gt.
+;
+    _name.category_id             chemical
+    _name.object_id               temperature_decomposition_gt_su
+    _name.linked_item_id          '_chemical.temperature_decomposition_gt'
+    _units.code                   kelvins
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_chemical.temperature_decomposition_lt
 
     _definition.id                '_chemical.temperature_decomposition_lt'
@@ -8001,6 +8868,23 @@ save_chemical.temperature_decomposition_lt
     _type.contents                Real
     _enumeration.range            0.0:
     _units.code                   kelvins
+
+save_
+
+save_chemical.temperature_decomposition_lt_su
+
+    _definition.id                '_chemical.temperature_decomposition_lt_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _chemical.temperature_decomposition_lt.
+;
+    _name.category_id             chemical
+    _name.object_id               temperature_decomposition_lt_su
+    _name.linked_item_id          '_chemical.temperature_decomposition_lt'
+    _units.code                   kelvins
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -8071,6 +8955,23 @@ save_chemical.temperature_sublimation_gt
 
 save_
 
+save_chemical.temperature_sublimation_gt_su
+
+    _definition.id                '_chemical.temperature_sublimation_gt_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _chemical.temperature_sublimation_gt.
+;
+    _name.category_id             chemical
+    _name.object_id               temperature_sublimation_gt_su
+    _name.linked_item_id          '_chemical.temperature_sublimation_gt'
+    _units.code                   kelvins
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_chemical.temperature_sublimation_lt
 
     _definition.id                '_chemical.temperature_sublimation_lt'
@@ -8089,6 +8990,23 @@ save_chemical.temperature_sublimation_lt
     _type.contents                Real
     _enumeration.range            0.0:
     _units.code                   kelvins
+
+save_
+
+save_chemical.temperature_sublimation_lt_su
+
+    _definition.id                '_chemical.temperature_sublimation_lt_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _chemical.temperature_sublimation_lt.
+;
+    _name.category_id             chemical
+    _name.object_id               temperature_sublimation_lt_su
+    _name.linked_item_id          '_chemical.temperature_sublimation_lt'
+    _units.code                   kelvins
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -8419,7 +9337,7 @@ save_CHEMICAL_FORMULA
     _definition.id                CHEMICAL_FORMULA
     _definition.scope             Category
     _definition.class             Set
-    _definition.update            2012-11-22
+    _definition.update            2021-09-24
     _description.text
 ;
     The CATEGORY of data items which specify the composition and chemical
@@ -8460,7 +9378,7 @@ save_CHEMICAL_FORMULA
        Abstracts. This ordering is used in _chemical_formula.moiety
        and _chemical_formula.sum.
 
-          _chemical_formula.iupac      '[Mo (C O)4 (C18 H33 P)2]'
+          _chemical_formula.IUPAC      '[Mo (C O)4 (C18 H33 P)2]'
           _chemical_formula.moiety     'C40 H66 Mo O4 P2'
           _chemical_formula.structural '((C O)4 (P (C6 H11)3)2)Mo'
           _chemical_formula.sum         'C40 H66 Mo O4 P2'
@@ -8493,9 +9411,9 @@ save_
 
 save_chemical_formula.iupac
 
-    _definition.id                '_chemical_formula.iupac'
-    _alias.definition_id          '_chemical_formula_iupac'
-    _definition.update            2012-11-22
+    _definition.id                '_chemical_formula.IUPAC'
+    _alias.definition_id          '_chemical_formula_IUPAC'
+    _definition.update            2021-09-24
     _description.text
 ;
     Formula expressed in conformance with IUPAC rules for inorganic
@@ -8508,7 +9426,7 @@ save_chemical_formula.iupac
          Oxford: Blackwell Scientific Publications.
 ;
     _name.category_id             chemical_formula
-    _name.object_id               iupac
+    _name.object_id               IUPAC
     _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
@@ -8613,11 +9531,11 @@ save_chemical_formula.weight
 
     _definition.id                '_chemical_formula.weight'
     _alias.definition_id          '_chemical_formula_weight'
-    _definition.update            2012-11-22
+    _definition.update            2021-09-24
     _description.text
 ;
     Mass corresponding to the formulae _chemical_formula.structural,
-    *_iupac, *_moiety or *_sum and, together with the Z value and cell
+    *_IUPAC, *_moiety or *_sum and, together with the Z value and cell
     parameters yield the density given as _exptl_crystal.density_diffrn.
 ;
     _name.category_id             chemical_formula
@@ -8648,6 +9566,23 @@ save_chemical_formula.weight_meas
     _type.contents                Real
     _enumeration.range            1.0:
     _units.code                   dalton
+
+save_
+
+save_chemical_formula.weight_meas_su
+
+    _definition.id                '_chemical_formula.weight_meas_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _chemical_formula.weight_meas.
+;
+    _name.category_id             chemical_formula
+    _name.object_id               weight_meas_su
+    _name.linked_item_id          '_chemical_formula.weight_meas'
+    _units.code                   dalton
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -8735,15 +9670,15 @@ save_exptl_absorpt.correction_t_min
          '_exptl_absorpt_correction_T_min'
          '_exptl.absorpt_correction_T_min'
 
-    _definition.update            2012-11-22
+    _definition.update            2021-08-15
     _description.text
 ;
-    Maximum transmission factor for the crystal and radiation applied
+    Minimum transmission factor for the crystal and radiation applied
     to the measured intensities, it includes the correction for
     absorption by the specimen mount and diffractometer as well
     as by the specimen itself. These values give the transmission (T)
     factor by which measured intensities have been REDUCED due to
-    absorption. Sometimes referred to as absorption correction A ori
+    absorption. Sometimes referred to as absorption correction A or
     1/A* (see "Crystal Structure Analysis for Chemists and Biologists"
     by J.P. Glusker et al., Wiley)
 ;
@@ -8898,6 +9833,23 @@ save_exptl_crystal.density_diffrn
 
 save_
 
+save_exptl_crystal.density_diffrn_su
+
+    _definition.id                '_exptl_crystal.density_diffrn_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _exptl_crystal.density_diffrn.
+;
+    _name.category_id             exptl_crystal
+    _name.object_id               density_diffrn_su
+    _name.linked_item_id          '_exptl_crystal.density_diffrn'
+    _units.code                   megagrams_per_metre_cubed
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_exptl_crystal.density_meas
 
     _definition.id                '_exptl_crystal.density_meas'
@@ -8968,6 +9920,23 @@ save_exptl_crystal.density_meas_gt
 
 save_
 
+save_exptl_crystal.density_meas_gt_su
+
+    _definition.id                '_exptl_crystal.density_meas_gt_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _exptl_crystal.density_meas_gt.
+;
+    _name.category_id             exptl_crystal
+    _name.object_id               density_meas_gt_su
+    _name.linked_item_id          '_exptl_crystal.density_meas_gt'
+    _units.code                   megagrams_per_metre_cubed
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_exptl_crystal.density_meas_lt
 
     _definition.id                '_exptl_crystal.density_meas_lt'
@@ -8989,6 +9958,23 @@ save_exptl_crystal.density_meas_lt
     _type.contents                Real
     _enumeration.range            0.0:
     _units.code                   megagrams_per_metre_cubed
+
+save_
+
+save_exptl_crystal.density_meas_lt_su
+
+    _definition.id                '_exptl_crystal.density_meas_lt_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _exptl_crystal.density_meas_lt.
+;
+    _name.category_id             exptl_crystal
+    _name.object_id               density_meas_lt_su
+    _name.linked_item_id          '_exptl_crystal.density_meas_lt'
+    _units.code                   megagrams_per_metre_cubed
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -9061,6 +10047,23 @@ save_exptl_crystal.density_meas_temp_gt
 
 save_
 
+save_exptl_crystal.density_meas_temp_gt_su
+
+    _definition.id                '_exptl_crystal.density_meas_temp_gt_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _exptl_crystal.density_meas_temp_gt.
+;
+    _name.category_id             exptl_crystal
+    _name.object_id               density_meas_temp_gt_su
+    _name.linked_item_id          '_exptl_crystal.density_meas_temp_gt'
+    _units.code                   kelvins
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_exptl_crystal.density_meas_temp_lt
 
     _definition.id                '_exptl_crystal.density_meas_temp_lt'
@@ -9081,6 +10084,23 @@ save_exptl_crystal.density_meas_temp_lt
     _type.contents                Real
     _enumeration.range            0.0:
     _units.code                   kelvins
+
+save_
+
+save_exptl_crystal.density_meas_temp_lt_su
+
+    _definition.id                '_exptl_crystal.density_meas_temp_lt_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _exptl_crystal.density_meas_temp_lt.
+;
+    _name.category_id             exptl_crystal
+    _name.object_id               density_meas_temp_lt_su
+    _name.linked_item_id          '_exptl_crystal.density_meas_temp_lt'
+    _units.code                   kelvins
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -9107,11 +10127,11 @@ save_exptl_crystal.description
 
     _definition.id                '_exptl_crystal.description'
     _alias.definition_id          '_exptl_crystal_description'
-    _definition.update            2012-11-22
+    _definition.update            2021-08-18
     _description.text
 ;
     Description of the quality and habit of the crystal. The crystal
-    dimensions should be provided using the exptl_crystal.size_* datanames.
+    dimensions should be provided using the exptl_crystal.size_* data items.
 ;
     _name.category_id             exptl_crystal
     _name.object_id               description
@@ -9258,6 +10278,23 @@ save_exptl_crystal.size_length
 
 save_
 
+save_exptl_crystal.size_length_su
+
+    _definition.id                '_exptl_crystal.size_length_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _exptl_crystal.size_length.
+;
+    _name.category_id             exptl_crystal
+    _name.object_id               size_length_su
+    _name.linked_item_id          '_exptl_crystal.size_length'
+    _units.code                   millimetres
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_exptl_crystal.size_max
 
     _definition.id                '_exptl_crystal.size_max'
@@ -9275,6 +10312,23 @@ save_exptl_crystal.size_max
     _type.contents                Real
     _enumeration.range            0.:
     _units.code                   millimetres
+
+save_
+
+save_exptl_crystal.size_max_su
+
+    _definition.id                '_exptl_crystal.size_max_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _exptl_crystal.size_max.
+;
+    _name.category_id             exptl_crystal
+    _name.object_id               size_max_su
+    _name.linked_item_id          '_exptl_crystal.size_max'
+    _units.code                   millimetres
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -9298,6 +10352,23 @@ save_exptl_crystal.size_mid
 
 save_
 
+save_exptl_crystal.size_mid_su
+
+    _definition.id                '_exptl_crystal.size_mid_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _exptl_crystal.size_mid.
+;
+    _name.category_id             exptl_crystal
+    _name.object_id               size_mid_su
+    _name.linked_item_id          '_exptl_crystal.size_mid'
+    _units.code                   millimetres
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_exptl_crystal.size_min
 
     _definition.id                '_exptl_crystal.size_min'
@@ -9318,6 +10389,23 @@ save_exptl_crystal.size_min
 
 save_
 
+save_exptl_crystal.size_min_su
+
+    _definition.id                '_exptl_crystal.size_min_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _exptl_crystal.size_min.
+;
+    _name.category_id             exptl_crystal
+    _name.object_id               size_min_su
+    _name.linked_item_id          '_exptl_crystal.size_min'
+    _units.code                   millimetres
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_exptl_crystal.size_rad
 
     _definition.id                '_exptl_crystal.size_rad'
@@ -9335,6 +10423,23 @@ save_exptl_crystal.size_rad
     _type.contents                Real
     _enumeration.range            0.:
     _units.code                   millimetres
+
+save_
+
+save_exptl_crystal.size_rad_su
+
+    _definition.id                '_exptl_crystal.size_rad_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _exptl_crystal.size_rad.
+;
+    _name.category_id             exptl_crystal
+    _name.object_id               size_rad_su
+    _name.linked_item_id          '_exptl_crystal.size_rad'
+    _units.code                   millimetres
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -9507,6 +10612,23 @@ save_exptl_crystal_face.diffr_chi
 
 save_
 
+save_exptl_crystal_face.diffr_chi_su
+
+    _definition.id                '_exptl_crystal_face.diffr_chi_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _exptl_crystal_face.diffr_chi.
+;
+    _name.category_id             exptl_crystal_face
+    _name.object_id               diffr_chi_su
+    _name.linked_item_id          '_exptl_crystal_face.diffr_chi'
+    _units.code                   degrees
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_exptl_crystal_face.diffr_kappa
 
     _definition.id                '_exptl_crystal_face.diffr_kappa'
@@ -9515,6 +10637,23 @@ save_exptl_crystal_face.diffr_kappa
     _name.object_id               diffr_kappa
 
     _import.get                   [{'file':templ_attr.cif  'save':face_angle}]
+
+save_
+
+save_exptl_crystal_face.diffr_kappa_su
+
+    _definition.id                '_exptl_crystal_face.diffr_kappa_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _exptl_crystal_face.diffr_kappa.
+;
+    _name.category_id             exptl_crystal_face
+    _name.object_id               diffr_kappa_su
+    _name.linked_item_id          '_exptl_crystal_face.diffr_kappa'
+    _units.code                   degrees
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -9529,6 +10668,23 @@ save_exptl_crystal_face.diffr_phi
 
 save_
 
+save_exptl_crystal_face.diffr_phi_su
+
+    _definition.id                '_exptl_crystal_face.diffr_phi_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _exptl_crystal_face.diffr_phi.
+;
+    _name.category_id             exptl_crystal_face
+    _name.object_id               diffr_phi_su
+    _name.linked_item_id          '_exptl_crystal_face.diffr_phi'
+    _units.code                   degrees
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_exptl_crystal_face.diffr_psi
 
     _definition.id                '_exptl_crystal_face.diffr_psi'
@@ -9537,6 +10693,23 @@ save_exptl_crystal_face.diffr_psi
     _name.object_id               diffr_psi
 
     _import.get                   [{'file':templ_attr.cif  'save':face_angle}]
+
+save_
+
+save_exptl_crystal_face.diffr_psi_su
+
+    _definition.id                '_exptl_crystal_face.diffr_psi_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _exptl_crystal_face.diffr_psi.
+;
+    _name.category_id             exptl_crystal_face
+    _name.object_id               diffr_psi_su
+    _name.linked_item_id          '_exptl_crystal_face.diffr_psi'
+    _units.code                   degrees
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -9616,6 +10789,23 @@ save_exptl_crystal_face.perp_dist
     _type.contents                Real
     _enumeration.range            0.0:
     _units.code                   millimetres
+
+save_
+
+save_exptl_crystal_face.perp_dist_su
+
+    _definition.id                '_exptl_crystal_face.perp_dist_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _exptl_crystal_face.perp_dist.
+;
+    _name.category_id             exptl_crystal_face
+    _name.object_id               perp_dist_su
+    _name.linked_item_id          '_exptl_crystal_face.perp_dist'
+    _units.code                   millimetres
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -10250,10 +11440,10 @@ save_symmetry.cell_setting
     _definition_replaced.id       1
     _definition_replaced.by       '_space_group.crystal_system'
     _alias.definition_id          '_symmetry_cell_setting'
-    _definition.update            2019-04-02
+    _definition.update            2021-08-18
     _description.text
 ;
-    This dataname should not be used and is DEPRECATED as it is
+    This data item should not be used and is DEPRECATED as it is
     ambiguous.
 
     The original definition is as follows:
@@ -10665,7 +11855,7 @@ save_
 save_space_group_wyckoff.letter
 
     _definition.id                '_space_group_Wyckoff.letter'
-    _definition.update            2014-06-12
+    _definition.update            2021-09-23
     _description.text
 ;
     The Wyckoff letter associated with this position, as given in
@@ -10684,42 +11874,15 @@ save_space_group_wyckoff.letter
     _type.container               Single
     _type.contents                Text
 
-    loop_
-      _enumeration_set.state
-         a
-         b
-         c
-         d
-         e
-         f
-         g
-         h
-         i
-         j
-         k
-         l
-         m
-         n
-         o
-         p
-         q
-         r
-         s
-         t
-         u
-         v
-         w
-         x
-         y
-         z
-         \a
+    _import.get
+        [{'file':templ_enum.cif  'save':Wyckoff_letter}]
 
 save_
 
 save_space_group_wyckoff.multiplicity
 
     _definition.id                '_space_group_Wyckoff.multiplicity'
-    _definition.update            2021-03-01
+    _definition.update            2021-08-19
     _description.text
 ;
     The multiplicity of this Wyckoff position as given in
@@ -10736,6 +11899,7 @@ save_space_group_wyckoff.multiplicity
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Integer
+    _enumeration.range            1:192
     _units.code                   none
 
 save_
@@ -11063,6 +12227,26 @@ save_geom_angle.distances
     _name.category_id             geom_angle
     _name.object_id               distances
     _type.purpose                 Measurand
+    _type.source                  Derived
+    _type.container               List
+    _type.dimension               '[2]'
+    _type.contents                Real
+    _units.code                   angstroms
+
+save_
+
+save_geom_angle.distances_su
+
+    _definition.id                '_geom_angle.distances_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _geom_angle.distances.
+;
+    _name.category_id             geom_angle
+    _name.object_id               distances_su
+    _name.linked_item_id          '_geom_angle.distances'
+    _type.purpose                 SU
     _type.source                  Derived
     _type.container               List
     _type.dimension               '[2]'
@@ -11476,6 +12660,23 @@ save_geom_bond.valence
     _type.contents                Real
     _enumeration.range            0.:
     _units.code                   electrons
+
+save_
+
+save_geom_bond.valence_su
+
+    _definition.id                '_geom_bond.valence_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _geom_bond.valence.
+;
+    _name.category_id             geom_bond
+    _name.object_id               valence_su
+    _name.linked_item_id          '_geom_bond.valence'
+    _units.code                   electrons
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -12347,6 +13548,26 @@ save_geom_torsion.distances
 
 save_
 
+save_geom_torsion.distances_su
+
+    _definition.id                '_geom_torsion.distances_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _geom_torsion.distances.
+;
+    _name.category_id             geom_torsion
+    _name.object_id               distances_su
+    _name.linked_item_id          '_geom_torsion.distances'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               List
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   angstroms
+
+save_
+
 save_geom_torsion.id
 
     _definition.id                '_geom_torsion.id'
@@ -12530,16 +13751,16 @@ save_
 
 save_model_site.adp_eigenvalues
 
-    _definition.id                '_model_site.adp_eigenvalues'
-    _definition.update            2021-07-01
+    _definition.id                '_model_site.ADP_eigenvalues'
+    _definition.update            2021-09-24
     _description.text
 ;
-    The set of three adp eigenvalues for the associated eigenvectors
-    given by _model_site.adp_eigenvectors. The eigenvalues are
+    The set of three ADP eigenvalues for the associated eigenvectors
+    given by _model_site.ADP_eigenvectors. The eigenvalues are
     sorted in order of magnitude with the largest first.
 ;
     _name.category_id             model_site
-    _name.object_id               adp_eigenvalues
+    _name.object_id               ADP_eigenvalues
     _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Array
@@ -12550,27 +13771,47 @@ save_model_site.adp_eigenvalues
     _method.expression
 ;
     A    =  _cell.orthogonal_matrix
-    U    =  A * _model_site.adp_matrix_beta * Transpose(A) /(2*Pi**2)
-    _model_site.adp_eigenvalues  =  Eigen( U )[:,0]
+    U    =  A * _model_site.ADP_matrix_beta * Transpose(A) /(2*Pi**2)
+    _model_site.ADP_eigenvalues  =  Eigen( U )[:,0]
 ;
+
+save_
+
+save_model_site.adp_eigenvalues_su
+
+    _definition.id                '_model_site.ADP_eigenvalues_su'
+    _definition.update            2021-09-24
+    _description.text
+;
+    Standard uncertainty of _model_site.ADP_eigenvalues.
+;
+    _name.category_id             model_site
+    _name.object_id               ADP_eigenvalues_su
+    _name.linked_item_id          '_model_site.ADP_eigenvalues'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Array
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   none
 
 save_
 
 save_model_site.adp_eigenvectors
 
-    _definition.id                '_model_site.adp_eigenvectors'
-    _definition.update            2021-07-01
+    _definition.id                '_model_site.ADP_eigenvectors'
+    _definition.update            2021-09-24
     _description.text
 ;
-    The set of three adp eigenvectors corresponding to the values
-    given in _model_site.adp_eigenvalues. The eigenvectors are
+    The set of three ADP eigenvectors corresponding to the values
+    given in _model_site.ADP_eigenvalues. The eigenvectors are
     contained in the rows of a matrix ordered from top to bottom
     in order largest to smallest corresponding eigenvalue. The
     eigenvector elements are direction cosines to the orthogonal
     axes X,Y,Z.
 ;
     _name.category_id             model_site
-    _name.object_id               adp_eigenvectors
+    _name.object_id               ADP_eigenvectors
     _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Array
@@ -12581,22 +13822,42 @@ save_model_site.adp_eigenvectors
     _method.expression
 ;
     A    =  _cell.orthogonal_matrix
-    U    =  A * _model_site.adp_matrix_beta * Transpose(A) /(2*Pi**2)
-    _model_site.adp_eigenvectors  =  Eigen( U )[:,1:4]
+    U    =  A * _model_site.ADP_matrix_beta * Transpose(A) /(2*Pi**2)
+    _model_site.ADP_eigenvectors  =  Eigen( U )[:,1:4]
 ;
+
+save_
+
+save_model_site.adp_eigenvectors_su
+
+    _definition.id                '_model_site.ADP_eigenvectors_su'
+    _definition.update            2021-09-24
+    _description.text
+;
+    Standard uncertainty of _model_site.ADP_eigenvectors.
+;
+    _name.category_id             model_site
+    _name.object_id               ADP_eigenvectors_su
+    _name.linked_item_id          '_model_site.ADP_eigenvectors'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Array
+    _type.dimension               '[3,3]'
+    _type.contents                Real
+    _units.code                   angstrom_squared
 
 save_
 
 save_model_site.adp_matrix_beta
 
-    _definition.id                '_model_site.adp_matrix_beta'
-    _definition.update            2021-03-01
+    _definition.id                '_model_site.ADP_matrix_beta'
+    _definition.update            2021-09-24
     _description.text
 ;
     Matrix of dimensionless anisotropic atomic displacement parameters.
 ;
     _name.category_id             model_site
-    _name.object_id               adp_matrix_beta
+    _name.object_id               ADP_matrix_beta
     _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Matrix
@@ -12610,8 +13871,28 @@ save_model_site.adp_matrix_beta
     a = atom_site[m.label]
     s = space_group_symop[SymKey(m.symop)]
 
-    _model_site.adp_matrix_beta =  s.R * a.tensor_beta * s.RT
+    _model_site.ADP_matrix_beta =  s.R * a.tensor_beta * s.RT
 ;
+
+save_
+
+save_model_site.adp_matrix_beta_su
+
+    _definition.id                '_model_site.ADP_matrix_beta_su'
+    _definition.update            2021-09-24
+    _description.text
+;
+    Standard uncertainty of _model_site.ADP_matrix_beta.
+;
+    _name.category_id             model_site
+    _name.object_id               ADP_matrix_beta_su
+    _name.linked_item_id          '_model_site.ADP_matrix_beta'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3,3]'
+    _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -12638,6 +13919,26 @@ save_model_site.cartn_xyz
 
     _model_site.Cartn_xyz =  _atom_sites_Cartn_transform.matrix * m.fract_xyz
 ;
+
+save_
+
+save_model_site.cartn_xyz_su
+
+    _definition.id                '_model_site.Cartn_xyz_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _model_site.Cartn_xyz.
+;
+    _name.category_id             model_site
+    _name.object_id               Cartn_xyz_su
+    _name.linked_item_id          '_model_site.Cartn_xyz'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   angstroms
 
 save_
 
@@ -12691,6 +13992,26 @@ save_model_site.fract_xyz
 
     _model_site.fract_xyz =  SymEquiv(m.symop, xyz)
 ;
+
+save_
+
+save_model_site.fract_xyz_su
+
+    _definition.id                '_model_site.fract_xyz_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _model_site.fract_xyz.
+;
+    _name.category_id             model_site
+    _name.object_id               fract_xyz_su
+    _name.linked_item_id          '_model_site.fract_xyz'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -13179,15 +14500,15 @@ save_
 
 save_audit.block_doi
 
-    _definition.id                '_audit.block_doi'
-    _alias.definition_id          '_audit_block_doi'
-    _definition.update            2017-09-23
+    _definition.id                '_audit.block_DOI'
+    _alias.definition_id          '_audit_block_DOI'
+    _definition.update            2021-09-24
     _description.text
 ;
     The digital object identifier (DOI) registered to identify
     the data set publication represented by the current
-    datablock. This can be used as a unique identifier for
-    the datablock so long as the code used is a valid DOI
+    data block. This can be used as a unique identifier for
+    the data block so long as the code used is a valid DOI
     (i.e. begins with a valid publisher prefix assigned by a
     Registration Agency and a suffix guaranteed to be unique
     by the publisher) and has had its metadata deposited
@@ -13204,7 +14525,7 @@ save_audit.block_doi
     (see http://www.doi.org).
 ;
     _name.category_id             audit
-    _name.object_id               block_doi
+    _name.object_id               block_DOI
     _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
@@ -13259,11 +14580,11 @@ save_
 save_audit.schema
 
     _definition.id                '_audit.schema'
-    _definition.update            2016-09-08
+    _definition.update            2021-08-18
     _description.text
 ;
-    This dataname identifies the type of information contained in the
-    datablock. Software written for one schema will not, in general,
+    This data item identifies the type of information contained in the
+    data block. Software written for one schema will not, in general,
     correctly interpret datafiles written against a different schema.
 
     Specifically, each value of _audit.schema corresponds to a list
@@ -13274,8 +14595,8 @@ save_audit.schema
     multiple packets and do not need to be listed.
 
     The category list for each schema may instead be determined from
-    examination of the dictionaries that this datablock conforms to (see
-    _audit_conform.dict_name).
+    examination of the dictionaries that this data block conforms to
+    (see _audit_conform.dict_name).
 ;
     _name.category_id             audit
     _name.object_id               schema
@@ -13297,8 +14618,8 @@ save_audit.schema
 ;
          'Entry'
 ;
-         entry category is defined and looped: information from multiple
-         datablocks in one block
+         entry category is defined and looped: information from multiple data
+         blocks in one block
 ;
          'Custom'
 ;
@@ -13318,7 +14639,7 @@ save_audit.update_record
 
     _definition.id                '_audit.update_record'
     _alias.definition_id          '_audit_update_record'
-    _definition.update            2012-11-29
+    _definition.update            2021-08-18
     _description.text
 ;
     A description of the revision applied to the data.
@@ -13329,7 +14650,7 @@ save_audit.update_record
     _type.source                  Recorded
     _type.container               Single
     _type.contents                Text
-    _description_example.case     '1990-07-15 Updated by Co-editor'
+    _description_example.case     'Updated by coeditor'
 
 save_
 
@@ -13396,8 +14717,8 @@ save_
 
 save_audit_author.id_orcid
 
-    _definition.id                '_audit_author.id_orcid'
-    _definition.update            2020-08-23
+    _definition.id                '_audit_author.id_ORCID'
+    _definition.update            2021-09-24
     _description.text
 ;
     Identifier in the ORCID Registry of a publication
@@ -13406,7 +14727,7 @@ save_audit_author.id_orcid
     identifiers (http://orcid.org).
 ;
     _name.category_id             audit_author
-    _name.object_id               id_orcid
+    _name.object_id               id_ORCID
     _type.purpose                 Encode
     _type.source                  Recorded
     _type.container               Single
@@ -13881,7 +15202,7 @@ save_AUDIT_SUPPORT
     _definition.id                AUDIT_SUPPORT
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2021-06-29
+    _definition.update            2021-09-24
     _description.text
 ;
     Data items in the AUDIT_SUPPORT category record details about the
@@ -13898,7 +15219,7 @@ save_AUDIT_SUPPORT
          loop_
          _audit_support.id
          _audit_support.funding_organization
-         _audit_support.funding_organization_doi
+         _audit_support.funding_organization_DOI
          _audit_support.award_type
          _audit_support.award_number
          _audit_support.award_recipient
@@ -14045,8 +15366,8 @@ save_
 
 save_audit_support.funding_organization_doi
 
-    _definition.id                '_audit_support.funding_organization_doi'
-    _definition.update            2020-08-23
+    _definition.id                '_audit_support.funding_organization_DOI'
+    _definition.update            2021-09-24
     _description.text
 ;
     The Digital Object Identifier (DOI) associated with the
@@ -14058,7 +15379,7 @@ save_audit_support.funding_organization_doi
     component).
 ;
     _name.category_id             audit_support
-    _name.object_id               funding_organisation_doi
+    _name.object_id               funding_organisation_DOI
     _type.purpose                 Encode
     _type.source                  Recorded
     _type.container               Single
@@ -14300,9 +15621,9 @@ save_
 
 save_citation.doi
 
-    _definition.id                '_citation.doi'
-    _alias.definition_id          '_citation_doi'
-    _definition.update            2017-09-23
+    _definition.id                '_citation.DOI'
+    _alias.definition_id          '_citation_DOI'
+    _definition.update            2021-09-24
     _description.text
 ;
     The Digital Object Identifier (DOI) of the cited work.
@@ -14318,7 +15639,7 @@ save_citation.doi
     (see http://www.doi.org).
 ;
     _name.category_id             citation
-    _name.object_id               doi
+    _name.object_id               DOI
     _type.purpose                 Encode
     _type.source                  Recorded
     _type.container               Single
@@ -15064,14 +16385,14 @@ save_
 
 save_database.dataset_doi
 
-    _definition.id                '_database.dataset_doi'
-    _alias.definition_id          '_database_dataset_doi'
-    _definition.update            2017-09-23
+    _definition.id                '_database.dataset_DOI'
+    _alias.definition_id          '_database_dataset_DOI'
+    _definition.update            2021-09-24
     _description.text
 ;
     The digital object identifier (DOI) registered to identify
     a data set publication associated with the structure
-    described in the current datablock. This should be used
+    described in the current data block. This should be used
     for a dataset obtained from a curated database such as
     CSD or PDB.
 
@@ -15086,7 +16407,7 @@ save_database.dataset_doi
     (see http://www.doi.org).
 ;
     _name.category_id             database
-    _name.object_id               dataset_doi
+    _name.object_id               dataset_DOI
     _type.purpose                 Encode
     _type.source                  Recorded
     _type.container               Single
@@ -15220,14 +16541,14 @@ save_
 
 save_database_code.depnum_ccdc_archive
 
-    _definition.id                '_database_code.depnum_ccdc_archive'
+    _definition.id                '_database_code.depnum_CCDC_archive'
 
     loop_
       _alias.definition_id
-         '_database_code_depnum_ccdc_archive'
-         '_database.code_depnum_ccdc_archive'
+         '_database_code_depnum_CCDC_archive'
+         '_database.code_depnum_CCDC_archive'
 
-    _definition.update            2013-01-22
+    _definition.update            2021-09-24
     _description.text
 ;
     Deposition numbers assigned by the Cambridge Crystallographic
@@ -15235,7 +16556,7 @@ save_database_code.depnum_ccdc_archive
     archived by the CCDC.
 ;
     _name.category_id             database_code
-    _name.object_id               depnum_ccdc_archive
+    _name.object_id               depnum_CCDC_archive
     _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
@@ -15245,14 +16566,14 @@ save_
 
 save_database_code.depnum_ccdc_fiz
 
-    _definition.id                '_database_code.depnum_ccdc_fiz'
+    _definition.id                '_database_code.depnum_CCDC_fiz'
 
     loop_
       _alias.definition_id
-         '_database_code_depnum_ccdc_fiz'
-         '_database.code_depnum_ccdc_fiz'
+         '_database_code_depnum_CCDC_fiz'
+         '_database.code_depnum_CCDC_fiz'
 
-    _definition.update            2013-01-22
+    _definition.update            2021-09-24
     _description.text
 ;
     Deposition numbers assigned by the Fachinformationszentrum
@@ -15260,7 +16581,7 @@ save_database_code.depnum_ccdc_fiz
     archived by the Cambridge Crystallographic Data Centre (CCDC).
 ;
     _name.category_id             database_code
-    _name.object_id               depnum_ccdc_fiz
+    _name.object_id               depnum_CCDC_fiz
     _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
@@ -15270,14 +16591,14 @@ save_
 
 save_database_code.depnum_ccdc_journal
 
-    _definition.id                '_database_code.depnum_ccdc_journal'
+    _definition.id                '_database_code.depnum_CCDC_journal'
 
     loop_
       _alias.definition_id
-         '_database_code_depnum_ccdc_journal'
-         '_database.code_depnum_ccdc_journal'
+         '_database_code_depnum_CCDC_journal'
+         '_database.code_depnum_CCDC_journal'
 
-    _definition.update            2013-01-22
+    _definition.update            2021-09-24
     _description.text
 ;
     Deposition numbers assigned by various journals to files
@@ -15285,7 +16606,7 @@ save_database_code.depnum_ccdc_journal
     Crystallographic Data Centre (CCDC).
 ;
     _name.category_id             database_code
-    _name.object_id               depnum_ccdc_journal
+    _name.object_id               depnum_CCDC_journal
     _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
@@ -15838,15 +17159,15 @@ save_
 
 save_journal.paper_doi
 
-    _definition.id                '_journal.paper_doi'
-    _alias.definition_id          '_journal_paper_doi'
+    _definition.id                '_journal.paper_DOI'
+    _alias.definition_id          '_journal_paper_DOI'
     _definition.update            2012-12-11
     _description.text
 ;
     DOI of the publication in the journal.
 ;
     _name.category_id             journal
-    _name.object_id               paper_doi
+    _name.object_id               paper_DOI
     _type.purpose                 Encode
     _type.source                  Recorded
     _type.container               Single
@@ -15954,10 +17275,10 @@ save_JOURNAL_COEDITOR
     _definition.id                JOURNAL_COEDITOR
     _definition.scope             Category
     _definition.class             Set
-    _definition.update            2012-12-11
+    _definition.update            2021-08-18
     _description.text
 ;
-    Category of items recording co-editor details.
+    Category of items recording coeditor details.
 ;
     _name.category_id             JOURNAL
     _name.object_id               JOURNAL_COEDITOR
@@ -16811,9 +18132,9 @@ save_
 
 save_publ_author.id_iucr
 
-    _definition.id                '_publ_author.id_iucr'
-    _alias.definition_id          '_publ_author_id_iucr'
-    _definition.update            2012-12-13
+    _definition.id                '_publ_author.id_IUCr'
+    _alias.definition_id          '_publ_author_id_IUCr'
+    _definition.update            2021-09-24
     _description.text
 ;
     Identifier in the IUCr contact database of a publication
@@ -16821,7 +18142,7 @@ save_publ_author.id_iucr
     Directory of Crystallographers (http://wdc.iucr.org).
 ;
     _name.category_id             publ_author
-    _name.object_id               id_iucr
+    _name.object_id               id_IUCr
     _type.purpose                 Encode
     _type.source                  Recorded
     _type.container               Single
@@ -16831,9 +18152,9 @@ save_
 
 save_publ_author.id_orcid
 
-    _definition.id                '_publ_author.id_orcid'
-    _alias.definition_id          '_publ_author_id_orcid'
-    _definition.update            2017-09-23
+    _definition.id                '_publ_author.id_ORCID'
+    _alias.definition_id          '_publ_author_id_ORCID'
+    _definition.update            2021-09-24
     _description.text
 ;
     Identifier in the ORCID Registry of a publication
@@ -16842,7 +18163,7 @@ save_publ_author.id_orcid
     identifiers (http://orcid.org).
 ;
     _name.category_id             publ_author
-    _name.object_id               id_orcid
+    _name.object_id               id_ORCID
     _type.purpose                 Encode
     _type.source                  Recorded
     _type.container               Single
@@ -17185,17 +18506,17 @@ save_
 
 save_publ_contact_author.id_iucr
 
-    _definition.id                '_publ_contact_author.id_iucr'
-    _alias.definition_id          '_publ_contact_author_id_iucr'
-    _definition.update            2012-11-29
+    _definition.id                '_publ_contact_author.id_IUCr'
+    _alias.definition_id          '_publ_contact_author_id_IUCr'
+    _definition.update            2021-09-24
     _description.text
 ;
     Identifier in the IUCr contact database of the author submitting
-    the manuscript and datablock. This identifier may be available
+    the manuscript and data block. This identifier may be available
     from the World Directory of Crystallographers (http://wdc.iucr.org).
 ;
     _name.category_id             publ_contact_author
-    _name.object_id               id_iucr
+    _name.object_id               id_IUCr
     _type.purpose                 Encode
     _type.source                  Recorded
     _type.container               Single
@@ -17205,9 +18526,9 @@ save_
 
 save_publ_contact_author.id_orcid
 
-    _definition.id                '_publ_contact_author.id_orcid'
-    _alias.definition_id          '_publ_contact_author_id_orcid'
-    _definition.update            2017-09-23
+    _definition.id                '_publ_contact_author.id_ORCID'
+    _alias.definition_id          '_publ_contact_author_id_ORCID'
+    _definition.update            2021-09-24
     _description.text
 ;
     Identifier in the ORCID Registry of the author submitting
@@ -17216,7 +18537,7 @@ save_publ_contact_author.id_orcid
     researcher identifiers (http://orcid.org).
 ;
     _name.category_id             publ_contact_author
-    _name.object_id               id_orcid
+    _name.object_id               id_ORCID
     _type.purpose                 Encode
     _type.source                  Recorded
     _type.container               Single
@@ -17562,10 +18883,10 @@ save_publ_requested.coeditor_name
          '_publ_requested_coeditor_name'
          '_publ.requested_coeditor_name'
 
-    _definition.update            2012-12-13
+    _definition.update            2021-08-18
     _description.text
 ;
-    The name of the Co-editor whom the authors would like to
+    The name of the coeditor whom the authors would like to
     process the submitted manuscript.
 ;
     _name.category_id             publ_requested
@@ -18062,21 +19383,21 @@ save_
 
 save_atom_site.adp_type
 
-    _definition.id                '_atom_site.adp_type'
+    _definition.id                '_atom_site.ADP_type'
 
     loop_
       _alias.definition_id
-         '_atom_site_adp_type'
+         '_atom_site_ADP_type'
          '_atom_site_thermal_displace_type'
          '_atom_site.thermal_displace_type'
 
-    _definition.update            2012-11-20
+    _definition.update            2021-09-24
     _description.text
 ;
     Code for type of atomic displacement parameters used for the site.
 ;
     _name.category_id             atom_site
-    _name.object_id               adp_type
+    _name.object_id               ADP_type
     _type.purpose                 State
     _type.source                  Assigned
     _type.container               Single
@@ -18192,9 +19513,9 @@ save_atom_site.b_iso_or_equiv
     atomic displacement parameter, B(equiv), in angstroms squared,
     calculated from anisotropic temperature factor parameters.
 
-        B(equiv) = (1/3) sum~i~[sum~j~(B^ij^ a*~i~ a*~j~ a~i~ a~j~)]
+        B(equiv) = (1/3) sum~i~[sum~j~(B^ij^ a*~i~ a*~j~ a~i~.a~j~)]
 
-    a     = the real-space cell lengths
+    a     = the real-space cell vectors
     a*    = the reciprocal-space cell lengths
     B^ij^ = 8 pi^2^ U^ij^
     Ref: Fischer, R. X. & Tillmanns, E. (1988). Acta Cryst. C44, 775-776.
@@ -18342,6 +19663,26 @@ save_atom_site.cartn_xyz
 
     _atom_site.Cartn_xyz =   [a.Cartn_x, a.Cartn_y, a.Cartn_z]
 ;
+
+save_
+
+save_atom_site.cartn_xyz_su
+
+    _definition.id                '_atom_site.Cartn_xyz_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_site.Cartn_xyz.
+;
+    _name.category_id             atom_site
+    _name.object_id               Cartn_xyz_su
+    _name.linked_item_id          '_atom_site.Cartn_xyz'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   angstroms
 
 save_
 
@@ -18589,6 +19930,26 @@ save_atom_site.fract_xyz
 
 save_
 
+save_atom_site.fract_xyz_su
+
+    _definition.id                '_atom_site.fract_xyz_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_site.fract_xyz.
+;
+    _name.category_id             atom_site
+    _name.object_id               fract_xyz_su
+    _name.linked_item_id          '_atom_site.fract_xyz'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   none
+
+save_
+
 save_atom_site.fract_y
 
     _definition.id                '_atom_site.fract_y'
@@ -18801,17 +20162,17 @@ save_atom_site.refinement_flags
       _definition_replaced.id
       _definition_replaced.by
          1                        '_atom_site.refinement_flags_posn'
-         2                        '_atom_site.refinement_flags_adp'
+         2                        '_atom_site.refinement_flags_ADP'
          3                        '_atom_site.refinement_flags_occupancy'
 
     _alias.definition_id          '_atom_site_refinement_flags'
-    _definition.update            2019-04-02
+    _definition.update            2021-09-24
     _description.text
 ;
     A concatenated series of single-letter codes which indicate the
     refinement restraints or constraints applied to this site. This
     item should not be used. It has been replaced by
-    _atom_site.refinement_flags_posn, _adp and _occupancy. It is
+    _atom_site.refinement_flags_posn, _ADP and _occupancy. It is
     retained in this dictionary only to provide compatibility with
     legacy CIFs.
 ;
@@ -18838,16 +20199,16 @@ save_
 
 save_atom_site.refinement_flags_adp
 
-    _definition.id                '_atom_site.refinement_flags_adp'
-    _alias.definition_id          '_atom_site_refinement_flags_adp'
-    _definition.update            2012-11-20
+    _definition.id                '_atom_site.refinement_flags_ADP'
+    _alias.definition_id          '_atom_site_refinement_flags_ADP'
+    _definition.update            2021-09-24
     _description.text
 ;
     A code which indicates the refinement restraints or constraints
     applied to the atomic displacement parameters of this site.
 ;
     _name.category_id             atom_site
-    _name.object_id               refinement_flags_adp
+    _name.object_id               refinement_flags_ADP
     _type.purpose                 State
     _type.source                  Assigned
     _type.container               Single
@@ -19023,7 +20384,7 @@ save_
 save_atom_site.tensor_beta
 
     _definition.id                '_atom_site.tensor_beta'
-    _definition.update            2021-03-01
+    _definition.update            2021-09-24
     _description.text
 ;
     The symmetric anisotropic atomic displacement tensor beta[I,J]
@@ -19031,7 +20392,7 @@ save_atom_site.tensor_beta
 
     t = exp -[ beta11 h h + ............ 2 beta23 k l ]
 
-    It is related to the adp matrices U(IJ) and B(IJ) as follows:
+    It is related to the ADP matrices U(IJ) and B(IJ) as follows:
 
     t = exp -2pi**2 ( U11    h h a* a* + ...... 2 U23    k l b* c* )
     t = exp - 0.25  ( B11    h h a* a* + ...... 2 B23    k l b* c* )
@@ -19051,7 +20412,7 @@ save_atom_site.tensor_beta
 
     label = a.label
 
-    If      (a.adp_type == 'Uani')  {
+    If      (a.ADP_type == 'Uani')  {
         Loop b as atom_site_aniso     {
           If(label == b.label)           {
 
@@ -19059,7 +20420,7 @@ save_atom_site.tensor_beta
               Break
     } } }
 
-    Else If (a.adp_type == 'Bani')  {
+    Else If (a.ADP_type == 'Bani')  {
         Loop b as atom_site_aniso     {
           If(label == b.label)           {
 
@@ -19068,7 +20429,7 @@ save_atom_site.tensor_beta
     } } }
 
     Else                                    {
-        If (a.adp_type == 'Uiso')  U  =  a.U_iso_or_equiv
+        If (a.ADP_type == 'Uiso')  U  =  a.U_iso_or_equiv
         Else                       U  =  a.B_iso_or_equiv / (8 * Pi**2)
 
             UIJ = U * _cell.convert_Uiso_to_Uij
@@ -19078,6 +20439,26 @@ save_atom_site.tensor_beta
 
        _atom_site.tensor_beta =  CUB * UIJ * CUB
 ;
+
+save_
+
+save_atom_site.tensor_beta_su
+
+    _definition.id                '_atom_site.tensor_beta_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_site.tensor_beta.
+;
+    _name.category_id             atom_site
+    _name.object_id               tensor_beta_su
+    _name.linked_item_id          '_atom_site.tensor_beta'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3,3]'
+    _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -19178,9 +20559,9 @@ save_atom_site.u_iso_or_equiv
     atomic  displacement parameter, U(equiv), in angstroms squared,
     calculated from anisotropic atomic displacement  parameters.
 
-       U(equiv) = (1/3) sum~i~[sum~j~(U^ij^ a*~i~ a*~j~ a~i~ a~j~)]
+       U(equiv) = (1/3) sum~i~[sum~j~(U^ij^ a*~i~ a*~j~ a~i~.a~j~)]
 
-    a  = the real-space cell lengths
+    a  = the real-space cell vectors
     a* = the reciprocal-space cell lengths
     Ref: Fischer, R. X. & Tillmanns, E. (1988). Acta Cryst. C44, 775-776.
 ;
@@ -19224,7 +20605,7 @@ save_atom_site.wyckoff_symbol
 
     _definition.id                '_atom_site.Wyckoff_symbol'
     _alias.definition_id          '_atom_site_Wyckoff_symbol'
-    _definition.update            2012-11-20
+    _definition.update            2021-09-23
     _description.text
 ;
     The Wyckoff symbol (letter) as listed in the space-group section
@@ -19232,10 +20613,13 @@ save_atom_site.wyckoff_symbol
 ;
     _name.category_id             atom_site
     _name.object_id               Wyckoff_symbol
-    _type.purpose                 Encode
+    _type.purpose                 State
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Code
+    _type.contents                Text
+
+    _import.get
+        [{'file':templ_enum.cif  'save':Wyckoff_letter}]
 
 save_
 
@@ -19521,6 +20905,26 @@ save_atom_site_aniso.matrix_b
 
 save_
 
+save_atom_site_aniso.matrix_b_su
+
+    _definition.id                '_atom_site_aniso.matrix_B_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_site_aniso.matrix_B.
+;
+    _name.category_id             atom_site_aniso
+    _name.object_id               matrix_B_su
+    _name.linked_item_id          '_atom_site_aniso.matrix_B'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3,3]'
+    _type.contents                Real
+    _units.code                   angstrom_squared
+
+save_
+
 save_atom_site_aniso.matrix_u
 
     _definition.id                '_atom_site_aniso.matrix_U'
@@ -19546,6 +20950,26 @@ save_atom_site_aniso.matrix_u
                       [ a.U_12, a.U_22, a.U_23 ],
                       [ a.U_13, a.U_23, a.U_33 ]]
 ;
+
+save_
+
+save_atom_site_aniso.matrix_u_su
+
+    _definition.id                '_atom_site_aniso.matrix_U_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_site_aniso.matrix_U.
+;
+    _name.category_id             atom_site_aniso
+    _name.object_id               matrix_U_su
+    _name.linked_item_id          '_atom_site_aniso.matrix_U'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3,3]'
+    _type.contents                Real
+    _units.code                   angstrom_squared
 
 save_
 
@@ -20157,6 +21581,23 @@ save_atom_sites_cartn_transform.mat_11
 
 save_
 
+save_atom_sites_cartn_transform.mat_11_su
+
+    _definition.id                '_atom_sites_Cartn_transform.mat_11_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_Cartn_transform.mat_11.
+;
+    _name.category_id             atom_sites_Cartn_transform
+    _name.object_id               mat_11_su
+    _name.linked_item_id          '_atom_sites_Cartn_transform.mat_11'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_atom_sites_cartn_transform.mat_12
 
     _definition.id                '_atom_sites_Cartn_transform.mat_12'
@@ -20179,6 +21620,23 @@ save_atom_sites_cartn_transform.mat_12
 
 save_
 
+save_atom_sites_cartn_transform.mat_12_su
+
+    _definition.id                '_atom_sites_Cartn_transform.mat_12_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_Cartn_transform.mat_12.
+;
+    _name.category_id             atom_sites_Cartn_transform
+    _name.object_id               mat_12_su
+    _name.linked_item_id          '_atom_sites_Cartn_transform.mat_12'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_atom_sites_cartn_transform.mat_13
 
     _definition.id                '_atom_sites_Cartn_transform.mat_13'
@@ -20198,6 +21656,23 @@ save_atom_sites_cartn_transform.mat_13
 ;
     _enumeration.default =  0.
 ;
+
+save_
+
+save_atom_sites_cartn_transform.mat_13_su
+
+    _definition.id                '_atom_sites_Cartn_transform.mat_13_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_Cartn_transform.mat_13.
+;
+    _name.category_id             atom_sites_Cartn_transform
+    _name.object_id               mat_13_su
+    _name.linked_item_id          '_atom_sites_Cartn_transform.mat_13'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -20226,6 +21701,23 @@ save_atom_sites_cartn_transform.mat_21
 
 save_
 
+save_atom_sites_cartn_transform.mat_21_su
+
+    _definition.id                '_atom_sites_Cartn_transform.mat_21_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_Cartn_transform.mat_21.
+;
+    _name.category_id             atom_sites_Cartn_transform
+    _name.object_id               mat_21_su
+    _name.linked_item_id          '_atom_sites_Cartn_transform.mat_21'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_atom_sites_cartn_transform.mat_22
 
     _definition.id                '_atom_sites_Cartn_transform.mat_22'
@@ -20250,6 +21742,23 @@ save_atom_sites_cartn_transform.mat_22
 
 save_
 
+save_atom_sites_cartn_transform.mat_22_su
+
+    _definition.id                '_atom_sites_Cartn_transform.mat_22_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_Cartn_transform.mat_22.
+;
+    _name.category_id             atom_sites_Cartn_transform
+    _name.object_id               mat_22_su
+    _name.linked_item_id          '_atom_sites_Cartn_transform.mat_22'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_atom_sites_cartn_transform.mat_23
 
     _definition.id                '_atom_sites_Cartn_transform.mat_23'
@@ -20269,6 +21778,23 @@ save_atom_sites_cartn_transform.mat_23
 ;
     _enumeration.default =  0.
 ;
+
+save_
+
+save_atom_sites_cartn_transform.mat_23_su
+
+    _definition.id                '_atom_sites_Cartn_transform.mat_23_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_Cartn_transform.mat_23.
+;
+    _name.category_id             atom_sites_Cartn_transform
+    _name.object_id               mat_23_su
+    _name.linked_item_id          '_atom_sites_Cartn_transform.mat_23'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -20296,6 +21822,23 @@ save_atom_sites_cartn_transform.mat_31
 
 save_
 
+save_atom_sites_cartn_transform.mat_31_su
+
+    _definition.id                '_atom_sites_Cartn_transform.mat_31_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_Cartn_transform.mat_31.
+;
+    _name.category_id             atom_sites_Cartn_transform
+    _name.object_id               mat_31_su
+    _name.linked_item_id          '_atom_sites_Cartn_transform.mat_31'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_atom_sites_cartn_transform.mat_32
 
     _definition.id                '_atom_sites_Cartn_transform.mat_32'
@@ -20320,6 +21863,23 @@ save_atom_sites_cartn_transform.mat_32
 
 save_
 
+save_atom_sites_cartn_transform.mat_32_su
+
+    _definition.id                '_atom_sites_Cartn_transform.mat_32_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_Cartn_transform.mat_32.
+;
+    _name.category_id             atom_sites_Cartn_transform
+    _name.object_id               mat_32_su
+    _name.linked_item_id          '_atom_sites_Cartn_transform.mat_32'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_atom_sites_cartn_transform.mat_33
 
     _definition.id                '_atom_sites_Cartn_transform.mat_33'
@@ -20339,6 +21899,23 @@ save_atom_sites_cartn_transform.mat_33
 ;
     _enumeration.default =  _cell.length_c
 ;
+
+save_
+
+save_atom_sites_cartn_transform.mat_33_su
+
+    _definition.id                '_atom_sites_Cartn_transform.mat_33_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_Cartn_transform.mat_33.
+;
+    _name.category_id             atom_sites_Cartn_transform
+    _name.object_id               mat_33_su
+    _name.linked_item_id          '_atom_sites_Cartn_transform.mat_33'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -20381,6 +21958,26 @@ save_atom_sites_cartn_transform.matrix
 
 save_
 
+save_atom_sites_cartn_transform.matrix_su
+
+    _definition.id                '_atom_sites_Cartn_transform.matrix_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_Cartn_transform.matrix.
+;
+    _name.category_id             atom_sites_Cartn_transform
+    _name.object_id               matrix_su
+    _name.linked_item_id          '_atom_sites_Cartn_transform.matrix'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3,3]'
+    _type.contents                Real
+    _units.code                   angstroms
+
+save_
+
 save_atom_sites_cartn_transform.vec_1
 
     _definition.id                '_atom_sites_Cartn_transform.vec_1'
@@ -20394,6 +21991,23 @@ save_atom_sites_cartn_transform.vec_1
     _name.object_id               vec_1
 
     _import.get                   [{'file':templ_attr.cif  'save':Cartn_vector}]
+
+save_
+
+save_atom_sites_cartn_transform.vec_1_su
+
+    _definition.id                '_atom_sites_Cartn_transform.vec_1_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_Cartn_transform.vec_1.
+;
+    _name.category_id             atom_sites_Cartn_transform
+    _name.object_id               vec_1_su
+    _name.linked_item_id          '_atom_sites_Cartn_transform.vec_1'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -20413,6 +22027,23 @@ save_atom_sites_cartn_transform.vec_2
 
 save_
 
+save_atom_sites_cartn_transform.vec_2_su
+
+    _definition.id                '_atom_sites_Cartn_transform.vec_2_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_Cartn_transform.vec_2.
+;
+    _name.category_id             atom_sites_Cartn_transform
+    _name.object_id               vec_2_su
+    _name.linked_item_id          '_atom_sites_Cartn_transform.vec_2'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_atom_sites_cartn_transform.vec_3
 
     _definition.id                '_atom_sites_Cartn_transform.vec_3'
@@ -20426,6 +22057,23 @@ save_atom_sites_cartn_transform.vec_3
     _name.object_id               vec_3
 
     _import.get                   [{'file':templ_attr.cif  'save':Cartn_vector}]
+
+save_
+
+save_atom_sites_cartn_transform.vec_3_su
+
+    _definition.id                '_atom_sites_Cartn_transform.vec_3_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_Cartn_transform.vec_3.
+;
+    _name.category_id             atom_sites_Cartn_transform
+    _name.object_id               vec_3_su
+    _name.linked_item_id          '_atom_sites_Cartn_transform.vec_3'
+    _units.code                   angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -20455,6 +22103,26 @@ save_atom_sites_cartn_transform.vector
 
     _atom_sites_Cartn_transform.vector =  [ t.vec_1, t.vec_2, t.vec_3 ]
 ;
+
+save_
+
+save_atom_sites_cartn_transform.vector_su
+
+    _definition.id                '_atom_sites_Cartn_transform.vector_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_Cartn_transform.vector.
+;
+    _name.category_id             atom_sites_Cartn_transform
+    _name.object_id               vector_su
+    _name.linked_item_id          '_atom_sites_Cartn_transform.vector'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   angstroms
 
 save_
 
@@ -20517,6 +22185,23 @@ save_atom_sites_fract_transform.mat_11
 
 save_
 
+save_atom_sites_fract_transform.mat_11_su
+
+    _definition.id                '_atom_sites_fract_transform.mat_11_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_fract_transform.mat_11.
+;
+    _name.category_id             atom_sites_fract_transform
+    _name.object_id               mat_11_su
+    _name.linked_item_id          '_atom_sites_fract_transform.mat_11'
+    _units.code                   reciprocal_angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_atom_sites_fract_transform.mat_12
 
     _definition.id                '_atom_sites_fract_transform.mat_12'
@@ -20530,6 +22215,23 @@ save_atom_sites_fract_transform.mat_12
     _name.object_id               mat_12
 
     _import.get                   [{'file':templ_attr.cif  'save':fract_matrix}]
+
+save_
+
+save_atom_sites_fract_transform.mat_12_su
+
+    _definition.id                '_atom_sites_fract_transform.mat_12_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_fract_transform.mat_12.
+;
+    _name.category_id             atom_sites_fract_transform
+    _name.object_id               mat_12_su
+    _name.linked_item_id          '_atom_sites_fract_transform.mat_12'
+    _units.code                   reciprocal_angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -20549,6 +22251,23 @@ save_atom_sites_fract_transform.mat_13
 
 save_
 
+save_atom_sites_fract_transform.mat_13_su
+
+    _definition.id                '_atom_sites_fract_transform.mat_13_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_fract_transform.mat_13.
+;
+    _name.category_id             atom_sites_fract_transform
+    _name.object_id               mat_13_su
+    _name.linked_item_id          '_atom_sites_fract_transform.mat_13'
+    _units.code                   reciprocal_angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_atom_sites_fract_transform.mat_21
 
     _definition.id                '_atom_sites_fract_transform.mat_21'
@@ -20562,6 +22281,23 @@ save_atom_sites_fract_transform.mat_21
     _name.object_id               mat_21
 
     _import.get                   [{'file':templ_attr.cif  'save':fract_matrix}]
+
+save_
+
+save_atom_sites_fract_transform.mat_21_su
+
+    _definition.id                '_atom_sites_fract_transform.mat_21_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_fract_transform.mat_21.
+;
+    _name.category_id             atom_sites_fract_transform
+    _name.object_id               mat_21_su
+    _name.linked_item_id          '_atom_sites_fract_transform.mat_21'
+    _units.code                   reciprocal_angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -20581,6 +22317,23 @@ save_atom_sites_fract_transform.mat_22
 
 save_
 
+save_atom_sites_fract_transform.mat_22_su
+
+    _definition.id                '_atom_sites_fract_transform.mat_22_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_fract_transform.mat_22.
+;
+    _name.category_id             atom_sites_fract_transform
+    _name.object_id               mat_22_su
+    _name.linked_item_id          '_atom_sites_fract_transform.mat_22'
+    _units.code                   reciprocal_angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_atom_sites_fract_transform.mat_23
 
     _definition.id                '_atom_sites_fract_transform.mat_23'
@@ -20594,6 +22347,23 @@ save_atom_sites_fract_transform.mat_23
     _name.object_id               mat_23
 
     _import.get                   [{'file':templ_attr.cif  'save':fract_matrix}]
+
+save_
+
+save_atom_sites_fract_transform.mat_23_su
+
+    _definition.id                '_atom_sites_fract_transform.mat_23_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_fract_transform.mat_23.
+;
+    _name.category_id             atom_sites_fract_transform
+    _name.object_id               mat_23_su
+    _name.linked_item_id          '_atom_sites_fract_transform.mat_23'
+    _units.code                   reciprocal_angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -20613,6 +22383,23 @@ save_atom_sites_fract_transform.mat_31
 
 save_
 
+save_atom_sites_fract_transform.mat_31_su
+
+    _definition.id                '_atom_sites_fract_transform.mat_31_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_fract_transform.mat_31.
+;
+    _name.category_id             atom_sites_fract_transform
+    _name.object_id               mat_31_su
+    _name.linked_item_id          '_atom_sites_fract_transform.mat_31'
+    _units.code                   reciprocal_angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_atom_sites_fract_transform.mat_32
 
     _definition.id                '_atom_sites_fract_transform.mat_32'
@@ -20629,6 +22416,23 @@ save_atom_sites_fract_transform.mat_32
 
 save_
 
+save_atom_sites_fract_transform.mat_32_su
+
+    _definition.id                '_atom_sites_fract_transform.mat_32_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_fract_transform.mat_32.
+;
+    _name.category_id             atom_sites_fract_transform
+    _name.object_id               mat_32_su
+    _name.linked_item_id          '_atom_sites_fract_transform.mat_32'
+    _units.code                   reciprocal_angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_atom_sites_fract_transform.mat_33
 
     _definition.id                '_atom_sites_fract_transform.mat_33'
@@ -20642,6 +22446,23 @@ save_atom_sites_fract_transform.mat_33
     _name.object_id               mat_33
 
     _import.get                   [{'file':templ_attr.cif  'save':fract_matrix}]
+
+save_
+
+save_atom_sites_fract_transform.mat_33_su
+
+    _definition.id                '_atom_sites_fract_transform.mat_33_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_fract_transform.mat_33.
+;
+    _name.category_id             atom_sites_fract_transform
+    _name.object_id               mat_33_su
+    _name.linked_item_id          '_atom_sites_fract_transform.mat_33'
+    _units.code                   reciprocal_angstroms
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -20684,6 +22505,26 @@ save_atom_sites_fract_transform.matrix
 
 save_
 
+save_atom_sites_fract_transform.matrix_su
+
+    _definition.id                '_atom_sites_fract_transform.matrix_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_fract_transform.matrix.
+;
+    _name.category_id             atom_sites_fract_transform
+    _name.object_id               matrix_su
+    _name.linked_item_id          '_atom_sites_fract_transform.matrix'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3,3]'
+    _type.contents                Real
+    _units.code                   reciprocal_angstroms
+
+save_
+
 save_atom_sites_fract_transform.vec_1
 
     _definition.id                '_atom_sites_fract_transform.vec_1'
@@ -20697,6 +22538,23 @@ save_atom_sites_fract_transform.vec_1
     _name.object_id               vec_1
 
     _import.get                   [{'file':templ_attr.cif  'save':fract_vector}]
+
+save_
+
+save_atom_sites_fract_transform.vec_1_su
+
+    _definition.id                '_atom_sites_fract_transform.vec_1_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_fract_transform.vec_1.
+;
+    _name.category_id             atom_sites_fract_transform
+    _name.object_id               vec_1_su
+    _name.linked_item_id          '_atom_sites_fract_transform.vec_1'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -20716,6 +22574,23 @@ save_atom_sites_fract_transform.vec_2
 
 save_
 
+save_atom_sites_fract_transform.vec_2_su
+
+    _definition.id                '_atom_sites_fract_transform.vec_2_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_fract_transform.vec_2.
+;
+    _name.category_id             atom_sites_fract_transform
+    _name.object_id               vec_2_su
+    _name.linked_item_id          '_atom_sites_fract_transform.vec_2'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_atom_sites_fract_transform.vec_3
 
     _definition.id                '_atom_sites_fract_transform.vec_3'
@@ -20729,6 +22604,23 @@ save_atom_sites_fract_transform.vec_3
     _name.object_id               vec_3
 
     _import.get                   [{'file':templ_attr.cif  'save':fract_vector}]
+
+save_
+
+save_atom_sites_fract_transform.vec_3_su
+
+    _definition.id                '_atom_sites_fract_transform.vec_3_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_fract_transform.vec_3.
+;
+    _name.category_id             atom_sites_fract_transform
+    _name.object_id               vec_3_su
+    _name.linked_item_id          '_atom_sites_fract_transform.vec_3'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -20758,6 +22650,26 @@ save_atom_sites_fract_transform.vector
 
     _atom_sites_fract_transform.vector =  [ t.vec_1, t.vec_2, t.vec_3 ]
 ;
+
+save_
+
+save_atom_sites_fract_transform.vector_su
+
+    _definition.id                '_atom_sites_fract_transform.vector_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_sites_fract_transform.vector.
+;
+    _name.category_id             atom_sites_fract_transform
+    _name.object_id               vector_su
+    _name.linked_item_id          '_atom_sites_fract_transform.vector'
+    _type.purpose                 SU
+    _type.source                  Derived
+    _type.container               Matrix
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -20814,6 +22726,23 @@ save_atom_type.analytical_mass_percent
     _type.contents                Real
     _enumeration.range            0.0:100.
     _units.code                   none
+
+save_
+
+save_atom_type.analytical_mass_percent_su
+
+    _definition.id                '_atom_type.analytical_mass_percent_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _atom_type.analytical_mass_percent.
+;
+    _name.category_id             atom_type
+    _name.object_id               analytical_mass_percent_su
+    _name.linked_item_id          '_atom_type.analytical_mass_percent'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -21385,7 +23314,7 @@ save_atom_type_scat.dispersion_imag
          '_atom_type_scat_dispersion_imag'
          '_atom_type.scat_dispersion_imag'
 
-    _definition.update            2012-11-20
+    _definition.update            2021-09-24
     _description.text
 ;
     The imaginary component of the anomalous dispersion scattering factors
@@ -21403,8 +23332,8 @@ save_atom_type_scat.dispersion_imag
 ;
     With q as atom_type_scat
 
-     If ( _diffrn_radiation.type[0:2] == 'Cu' ) a = q.dispersion_imag_cu
-     If ( _diffrn_radiation.type[0:2] == 'Mo' ) a = q.dispersion_imag_mo
+     If ( _diffrn_radiation.type[0:2] == 'Cu' ) a = q.dispersion_imag_Cu
+     If ( _diffrn_radiation.type[0:2] == 'Mo' ) a = q.dispersion_imag_Mo
 
              _atom_type_scat.dispersion_imag = a
 ;
@@ -21413,15 +23342,15 @@ save_
 
 save_atom_type_scat.dispersion_imag_cu
 
-    _definition.id                '_atom_type_scat.dispersion_imag_cu'
-    _definition.update            2012-11-20
+    _definition.id                '_atom_type_scat.dispersion_imag_Cu'
+    _definition.update            2021-09-24
     _description.text
 ;
     The imaginary component of the anomalous dispersion scattering factors
     for this atom type and Cu K alpha radiation
 ;
     _name.category_id             atom_type_scat
-    _name.object_id               dispersion_imag_cu
+    _name.object_id               dispersion_imag_Cu
     _type.purpose                 Number
     _type.source                  Assigned
     _type.container               Single
@@ -21436,15 +23365,15 @@ save_
 
 save_atom_type_scat.dispersion_imag_mo
 
-    _definition.id                '_atom_type_scat.dispersion_imag_mo'
-    _definition.update            2012-11-20
+    _definition.id                '_atom_type_scat.dispersion_imag_Mo'
+    _definition.update            2021-09-24
     _description.text
 ;
     The imaginary component of the anomalous dispersion scattering factors
     for this atom type and Mo K alpha radiation
 ;
     _name.category_id             atom_type_scat
-    _name.object_id               dispersion_imag_mo
+    _name.object_id               dispersion_imag_Mo
     _type.purpose                 Number
     _type.source                  Assigned
     _type.container               Single
@@ -21484,8 +23413,8 @@ save_atom_type_scat.dispersion_real
 ;
     With q as atom_type_scat
 
-     If ( _diffrn_radiation.type[0:2] == 'Cu' ) a = q.dispersion_real_cu
-     If ( _diffrn_radiation.type[0:2] == 'Mo' ) a = q.dispersion_real_mo
+     If ( _diffrn_radiation.type[0:2] == 'Cu' ) a = q.dispersion_real_Cu
+     If ( _diffrn_radiation.type[0:2] == 'Mo' ) a = q.dispersion_real_Mo
 
              _atom_type_scat.dispersion_real = a
 ;
@@ -21494,15 +23423,15 @@ save_
 
 save_atom_type_scat.dispersion_real_cu
 
-    _definition.id                '_atom_type_scat.dispersion_real_cu'
-    _definition.update            2012-11-20
+    _definition.id                '_atom_type_scat.dispersion_real_Cu'
+    _definition.update            2021-09-24
     _description.text
 ;
     The real component of the anomalous dispersion scattering factors
     for this atom type and Cu K alpha radiation
 ;
     _name.category_id             atom_type_scat
-    _name.object_id               dispersion_real_cu
+    _name.object_id               dispersion_real_Cu
     _type.purpose                 Number
     _type.source                  Assigned
     _type.container               Single
@@ -21517,15 +23446,15 @@ save_
 
 save_atom_type_scat.dispersion_real_mo
 
-    _definition.id                '_atom_type_scat.dispersion_real_mo'
-    _definition.update            2012-11-20
+    _definition.id                '_atom_type_scat.dispersion_real_Mo'
+    _definition.update            2021-09-24
     _description.text
 ;
     The real component of the anomalous dispersion scattering factors
     for this atom type and Mo K alpha radiation
 ;
     _name.category_id             atom_type_scat
-    _name.object_id               dispersion_real_mo
+    _name.object_id               dispersion_real_Mo
     _type.purpose                 Number
     _type.source                  Assigned
     _type.container               Single
@@ -21789,12 +23718,12 @@ save_REFINE_DIFF
     _definition.id                REFINE_DIFF
     _definition.scope             Category
     _definition.class             Set
-    _definition.update            2012-11-20
+    _definition.update            2021-09-24
     _description.text
 ;
     The CATEGORY of data items which specify the electron density limits
     in a difference Fourier map after the structure has been refined. The
-    rms value is with respect to the arithmetic mean density, and is derived
+    RMS value is with respect to the arithmetic mean density, and is derived
     from summations over each grid point in the asymmetric unit of the cell.
 ;
     _name.category_id             REFINE
@@ -21930,12 +23859,12 @@ save_
 
 save_refine_diff.density_rms
 
-    _definition.id                '_refine_diff.density_rms'
+    _definition.id                '_refine_diff.density_RMS'
 
     loop_
       _alias.definition_id
-         '_refine_diff_density_rms'
-         '_refine.diff_density_rms'
+         '_refine_diff_density_RMS'
+         '_refine.diff_density_RMS'
 
     _definition.update            2012-11-20
     _description.text
@@ -21948,7 +23877,7 @@ save_refine_diff.density_rms
     and also for defining suitable contour levels.
 ;
     _name.category_id             refine_diff
-    _name.object_id               density_rms
+    _name.object_id               density_RMS
     _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Single
@@ -21966,12 +23895,12 @@ save_
 
 save_refine_diff.density_rms_su
 
-    _definition.id                '_refine_diff.density_rms_su'
+    _definition.id                '_refine_diff.density_RMS_su'
 
     loop_
       _alias.definition_id
-         '_refine_diff_density_rms_su'
-         '_refine.diff_density_rms_esd'
+         '_refine_diff_density_RMS_su'
+         '_refine.diff_density_RMS_esd'
 
     _definition.update            2021-03-03
     _description.text
@@ -21980,8 +23909,8 @@ save_refine_diff.density_rms_su
     in a difference Fourier map.
 ;
     _name.category_id             refine_diff
-    _name.object_id               density_rms_su
-    _name.linked_item_id          '_refine_diff.density_rms'
+    _name.object_id               density_RMS_su
+    _name.linked_item_id          '_refine_diff.density_RMS'
     _type.purpose                 SU
     _type.source                  Related
     _type.container               Single
@@ -22044,12 +23973,12 @@ save_refine_ls.abs_structure_flack
          '_refine_ls_abs_structure_Flack'
          '_refine.ls_abs_structure_Flack'
 
-    _definition.update            2012-11-20
+    _definition.update            2021-08-18
     _description.text
 ;
     The measure of absolute structure as defined by Flack (1983).
-    For centrosymmetric structures, the only permitted value, if the
-    data name is present, is 'inapplicable', represented by '.' .
+    For centrosymmetric structures, the only permitted value, if
+    the data item is present, is 'inapplicable', represented by '.' .
     For noncentrosymmetric structures, the value must lie in the
     99.97% Gaussian confidence interval  -3u =< x =< 1 + 3u and a
     standard uncertainty (e.s.d.) u must be supplied. The
@@ -22423,6 +24352,30 @@ save_refine_ls.f_calc_precision
 
 save_
 
+save_refine_ls.f_calc_precision_su
+
+    _definition.id                '_refine_ls.F_calc_precision_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _refine_ls.F_calc_precision.
+;
+    _name.category_id             refine_ls
+    _name.object_id               F_calc_precision_su
+    _name.linked_item_id          '_refine_ls.F_calc_precision'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _method.purpose               Definition
+    _method.expression
+;
+         If (_diffrn_radiation.probe == "neutron")  _units.code =  "femtometres"
+    Else If (_diffrn_radiation.probe == "electron") _units.code =  "volts"
+    Else                                            _units.code =  "electrons"
+;
+
+save_
+
 save_refine_ls.goodness_of_fit_all
 
     _definition.id                '_refine_ls.goodness_of_fit_all'
@@ -22603,6 +24556,23 @@ save_refine_ls.goodness_of_fit_ref
     _type.contents                Real
     _enumeration.range            0.0:
     _units.code                   none
+
+save_
+
+save_refine_ls.goodness_of_fit_ref_su
+
+    _definition.id                '_refine_ls.goodness_of_fit_ref_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _refine_ls.goodness_of_fit_ref.
+;
+    _name.category_id             refine_ls
+    _name.object_id               goodness_of_fit_ref_su
+    _name.linked_item_id          '_refine_ls.goodness_of_fit_ref'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -23088,6 +25058,23 @@ save_refine_ls.restrained_s_all
 
 save_
 
+save_refine_ls.restrained_s_all_su
+
+    _definition.id                '_refine_ls.restrained_S_all_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _refine_ls.restrained_S_all.
+;
+    _name.category_id             refine_ls
+    _name.object_id               restrained_S_all_su
+    _name.linked_item_id          '_refine_ls.restrained_S_all'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_refine_ls.restrained_s_gt
 
     _definition.id                '_refine_ls.restrained_S_gt'
@@ -23139,6 +25126,23 @@ save_refine_ls.restrained_s_gt
     _type.contents                Real
     _enumeration.range            0.0:
     _units.code                   none
+
+save_
+
+save_refine_ls.restrained_s_gt_su
+
+    _definition.id                '_refine_ls.restrained_S_gt_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _refine_ls.restrained_S_gt.
+;
+    _name.category_id             refine_ls
+    _name.object_id               restrained_S_gt_su
+    _name.linked_item_id          '_refine_ls.restrained_S_gt'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -23940,11 +25944,11 @@ save_
       _dictionary_audit.version
       _dictionary_audit.date
       _dictionary_audit.revision
-         3.0.05                   2016-05-13
+         3.0.5                    2016-05-13
 ;
        Merged in most symmetry dictionary definitions (James Hester)
 ;
-         3.0.06                   2016-09-13
+         3.0.6                    2016-09-13
 ;
        Adjusted and removed keys for changes in dREL operation.
        _citation_id added to key list of citation_author (James Hester).
@@ -23952,18 +25956,18 @@ save_
        EXPTL_CRYSTAL to Set type in keeping with current use patterns.
        Removed all child keys of exptl_crystal_id.
 ;
-         3.0.07                   2017-06-10
+         3.0.7                    2017-06-10
 ;
        Added and deprecated symmetry.cell_setting. Removed rhombohedral
        option from dREL method for space_group.crystal_system. (James Hester)
 ;
-         3.0.08                   2017-09-23
+         3.0.8                    2017-09-23
 ;
        Added missing items from DDL1 version: _citation.doi, _audit.block_doi
        _citation.publisher, _database.dataset_doi,
        _publ_contact_author.id_orcid, _publ_author.id_orcid (James Hester)
 ;
-         3.0.09                   2018-04-10
+         3.0.9                    2018-04-10
 ;
        Rewrote CITATION category description to cover all relevant uses rather
        than only publication-related uses (James Hester).
@@ -24043,7 +26047,7 @@ save_
        Removed all instances of the _category.key_id attribute since it is no
        longer defined in the DDLm reference dictionary.
 ;
-         3.1.0                    2021-07-26
+         3.1.0                    2021-09-24
 ;
        Replaced _model_site.adp_eigen_system with _model_site.adp_eigenvectors
        and _model_site.adp_eigenvalues.
@@ -24069,5 +26073,24 @@ save_
        the _atom_sites_fract_transform.matrix data item from
        'none' to 'reciprocal_angstroms'.
 
-       Updated the description of the _diffrn_source.make data item.
+       Changed the units of measurement in the definition of
+       the _diffrn_radiation_wavelength.value_su data item from
+       'none' to 'angstroms'.
+
+       Updated the description of the _diffrn_source.make and
+       _exptl_absorpt.correction_t_min data items.
+
+       Unified the spelling of certain words.
+
+       Added an enumeration range to the definition of
+       the _space_group_Wyckoff.multiplicity data item.
+
+       Fixed text description of _atom_site.U,B_iso_or_equiv.
+
+       Added multiple standard uncertainty (SU) data items.
+
+       Restricted the _atom_site.Wyckoff_symbol data item values
+       to a set of case-sensitive enumeration values.
+
+       Updated the capitalisation of multiple data items.
 ;
