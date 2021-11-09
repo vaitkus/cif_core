@@ -15782,7 +15782,7 @@ save_citation.journal_issue
     _type.contents                Integer
     _enumeration.range            1:
     _units.code                   none
-    _description_example.case     2
+    _description_example.case     2(3)
 
 save_
 
