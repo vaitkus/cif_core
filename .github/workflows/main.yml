@@ -40,7 +40,7 @@ jobs:
           uses: actions/checkout@v2
 
         - name: check_ddlm
-          uses: vaitkus/dictionary_check_action@update-cod-tools-from-r8869-to-r8928
+          uses: COMCIFS/dictionary_check_action
           id: ddlm_check
   layout:
     runs-on: ubuntu-latest
