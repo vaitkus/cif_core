@@ -10,7 +10,7 @@ data_CORE_DIC
     _dictionary.title             CORE_DIC
     _dictionary.class             Instance
     _dictionary.version           3.1.0
-    _dictionary.date              2021-11-09
+    _dictionary.date              2021-11-15
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/cif_core/master/cif_core.dic
     _dictionary.ddl_conformance   4.1.0
@@ -5875,6 +5875,23 @@ save_reflns_scale.meas_f
 
 save_
 
+save_reflns_scale.meas_f_su
+
+    _definition.id                '_reflns_scale.meas_F_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _reflns_scale.meas_F.
+;
+    _name.category_id             reflns_scale
+    _name.object_id               meas_F_su
+    _name.linked_item_id          '_reflns_scale.meas_F'
+    _units.code                   none
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_reflns_scale.meas_f_squared
 
     _definition.id                '_reflns_scale.meas_F_squared'
@@ -5906,23 +5923,6 @@ save_reflns_scale.meas_f_squared_su
     _name.category_id             reflns_scale
     _name.object_id               meas_F_squared_su
     _name.linked_item_id          '_reflns_scale.meas_F_squared'
-    _units.code                   none
-
-    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-save_
-
-save_reflns_scale.meas_f_su
-
-    _definition.id                '_reflns_scale.meas_F_su'
-    _definition.update            2021-09-23
-    _description.text
-;
-    Standard uncertainty of _reflns_scale.meas_F.
-;
-    _name.category_id             reflns_scale
-    _name.object_id               meas_F_su
-    _name.linked_item_id          '_reflns_scale.meas_F'
     _units.code                   none
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
@@ -8495,6 +8495,23 @@ save_chemical.melting_point
 
 save_
 
+save_chemical.melting_point_su
+
+    _definition.id                '_chemical.melting_point_su'
+    _definition.update            2021-09-23
+    _description.text
+;
+    Standard uncertainty of _chemical.melting_point.
+;
+    _name.category_id             chemical
+    _name.object_id               melting_point_su
+    _name.linked_item_id          '_chemical.melting_point'
+    _units.code                   kelvins
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+save_
+
 save_chemical.melting_point_gt
 
     _definition.id                '_chemical.melting_point_gt'
@@ -8534,23 +8551,6 @@ save_chemical.melting_point_lt
     _type.contents                Real
     _enumeration.range            0.0:
     _units.code                   kelvins
-
-save_
-
-save_chemical.melting_point_su
-
-    _definition.id                '_chemical.melting_point_su'
-    _definition.update            2021-09-23
-    _description.text
-;
-    Standard uncertainty of _chemical.melting_point.
-;
-    _name.category_id             chemical
-    _name.object_id               melting_point_su
-    _name.linked_item_id          '_chemical.melting_point'
-    _units.code                   kelvins
-
-    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
 save_
 
@@ -11407,7 +11407,7 @@ save_space_group_symop.id
          '_symmetry_equiv.pos_site_id'
          '_symmetry_equiv_pos_site_id'
 
-    _definition.update            2021-03-01
+    _definition.update            2021-11-15
     _description.text
 ;
     Index identifying each entry in the _space_group_symop.operation_xyz
@@ -11423,7 +11423,7 @@ save_space_group_symop.id
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Integer
-    _enumeration.range            1:
+    _enumeration.range            1:192
     _units.code                   none
     _method.purpose               Evaluation
     _method.expression
@@ -15599,20 +15599,22 @@ save_citation.journal_issue
 
     _definition.id                '_citation.journal_issue'
     _alias.definition_id          '_citation_journal_issue'
-    _definition.update            2021-03-01
+    _definition.update            2021-11-12
     _description.text
 ;
-    Issue number of the journal cited;  relevant for articles.
+    Issue identifier of the journal cited;  relevant for articles.
 ;
     _name.category_id             citation
     _name.object_id               journal_issue
-    _type.purpose                 Number
+    _type.purpose                 Encode
     _type.source                  Recorded
     _type.container               Single
-    _type.contents                Integer
-    _enumeration.range            1:
-    _units.code                   none
-    _description_example.case     2(3)
+    _type.contents                Text
+
+    loop_
+      _description_example.case
+         '2'
+         'Special Issue'
 
 save_
 
@@ -15760,17 +15762,18 @@ save_citation.year
 
     _definition.id                '_citation.year'
     _alias.definition_id          '_citation_year'
-    _definition.update            2012-12-11
+    _definition.update            2021-11-14
     _description.text
 ;
     Year of citation; relevant for articles and book chapters.
 ;
     _name.category_id             citation
     _name.object_id               year
-    _type.purpose                 Encode
+    _type.purpose                 Number
     _type.source                  Recorded
     _type.container               Single
-    _type.contents                Text
+    _type.contents                Integer
+    _units.code                   none
 
 save_
 
@@ -16872,7 +16875,7 @@ save_journal.issue
 
     _definition.id                '_journal.issue'
     _alias.definition_id          '_journal_issue'
-    _definition.update            2021-11-04
+    _definition.update            2021-11-12
     _description.text
 ;
     Issue identifier within the journal.
@@ -16883,6 +16886,11 @@ save_journal.issue
     _type.source                  Recorded
     _type.container               Single
     _type.contents                Text
+
+    loop_
+      _description_example.case
+         '2'
+         'Special Issue'
 
 save_
 
@@ -17073,7 +17081,7 @@ save_journal.year
 
     _definition.id                '_journal.year'
     _alias.definition_id          '_journal_year'
-    _definition.update            2021-03-01
+    _definition.update            2021-11-14
     _description.text
 ;
     Year of the publication.
@@ -17084,7 +17092,6 @@ save_journal.year
     _type.source                  Recorded
     _type.container               Single
     _type.contents                Integer
-    _enumeration.range            1700:2100
     _units.code                   none
 
 save_
@@ -25866,7 +25873,7 @@ save_
        Removed all instances of the _category.key_id attribute since it is no
        longer defined in the DDLm reference dictionary.
 ;
-         3.1.0                    2021-11-09
+         3.1.0                    2021-11-15
 ;
        Replaced _model_site.adp_eigen_system with _model_site.adp_eigenvectors
        and _model_site.adp_eigenvalues.
@@ -25926,4 +25933,10 @@ save_
 
        Changed _gt/_lt data names to 'Number' type in accordance with DDL1
        behaviour. Removed associated SU data names.
+
+       Homogenised the definitions of _citation.year, _journal.year,
+       _citation.journal_issue, and _journal.issue data items.
+
+       Added an upper enumeration limit of 192 to the definition of
+       the _space_group_symop.id data item.
 ;
