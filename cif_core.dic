@@ -194,7 +194,7 @@ save_diffrn.ambient_temperature
          '_diffrn_ambient_temperature'
          '_diffrn_ambient_temp'
          '_diffrn.ambient_temp'
-                                                      .
+                                                       .
 
     _definition.update            2012-11-26
     _description.text
