@@ -44,11 +44,11 @@ jobs:
           id: ddlm_check
   layout:
     runs-on: ubuntu-latest
-    needs: ddlm
+    needs: syntax
 
     steps:
       - name: Get the cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache
         with:
                  path: ~/.julia
@@ -91,7 +91,7 @@ jobs:
                for file in main/*.dic
                do      
                   echo "Checking $file"
-                  julia -O0 ./julia_cif_tools/linter.jl $file cif_core/ddl.dic
+                  julia -O0 ./julia_cif_tools/linter.jl -i $PWD/cif_core $file cif_core/ddl.dic
                   if [ $? != 0 ] 
                   then 
                     exit 1 ;
