@@ -1,4 +1,5 @@
 #\#CIF_2.0
+# SPDX-License-Identifier: CC-BY-4.0
 ##############################################################################
 #                                                                            #
 #                      DDLm REFERENCE DICTIONARY                             #
@@ -10,7 +11,7 @@ data_DDL_DIC
     _dictionary.title             DDL_DIC
     _dictionary.class             Reference
     _dictionary.version           4.2.0
-    _dictionary.date              2023-11-14
+    _dictionary.date              2025-07-04
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/cif_core/master/ddl.dic
     _dictionary.ddl_conformance   4.2.0
@@ -76,10 +77,13 @@ save_alias.deprecation_date
 
     _definition.id                '_alias.deprecation_date'
     _definition.class             Attribute
-    _definition.update            2013-09-08
+    _definition.update            2024-02-05
     _description.text
 ;
     Date that the aliased tag was deprecated as a definition tag.
+
+    An unquoted value of '.' indicates that the associated alias has not been
+    deprecated.
 ;
     _name.category_id             alias
     _name.object_id               deprecation_date
@@ -87,6 +91,7 @@ save_alias.deprecation_date
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Date
+    _enumeration.default          .
 
 save_
 
@@ -94,10 +99,14 @@ save_alias.dictionary_uri
 
     _definition.id                '_alias.dictionary_uri'
     _definition.class             Attribute
-    _definition.update            2006-11-16
+    _definition.update            2024-04-04
     _description.text
 ;
-    Absolute URI of dictionary to which the aliased definition belongs.
+    An absolute URI of the dictionary that includes the aliased definition.
+    The URI should preferably point to a specific version of the dictionary
+    identified by the _alias.dictionary_version attribute, however, a more
+    general URI, e.g. one that always points to the latest version of the
+    dictionary, can also be provided when this is not possible.
 ;
     _name.category_id             alias
     _name.object_id               dictionary_uri
@@ -105,6 +114,25 @@ save_alias.dictionary_uri
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Uri
+
+save_
+
+save_alias.dictionary_version
+
+    _definition.id                '_alias.dictionary_version'
+    _definition.class             Attribute
+    _definition.update            2024-04-04
+    _description.text
+;
+    The version identifier of the dictionary containing a compatible version of
+    the aliased definition.
+;
+    _name.category_id             alias
+    _name.object_id               dictionary_version
+    _type.purpose                 Identify
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Text
 
 save_
 
@@ -820,7 +848,7 @@ save_dictionary_author.name
 
     _definition.id                '_dictionary_author.name'
     _definition.class             Attribute
-    _definition.update            2023-07-13
+    _definition.update            2025-02-19
     _description.text
 ;
     The name of an author of this dictionary. The family name(s), followed
@@ -837,14 +865,14 @@ save_dictionary_author.name
 
     loop_
       _description_example.case
-         '''Bleary, Percival R.'''
-         '''O'Neil, F.K.'''
-         '''Van den Bossche, G.'''
-         '''Yang, D.-L.'''
-         '''Simonov, Yu.A.'''
-         '''M\"uller, H.A.'''
-         '''Ross II, C.R.'''
-         '''Chandra'''
+         "Bleary, Percival R."
+         "O'Neil, F.K."
+         "Van den Bossche, G."
+         "Yang, D.-L."
+         "Simonov, Yu.A."
+         "Müller, H.A."
+         "Ross II, C.R."
+         "Chandra"
 
 save_
 
@@ -2003,7 +2031,7 @@ save_type.contents
 
     _definition.id                '_type.contents'
     _definition.class             Attribute
-    _definition.update            2023-11-07
+    _definition.update            2025-07-04
     _description.text
 ;
     Syntax of the value elements within the container type. Where the
@@ -2104,7 +2132,8 @@ save_type.contents
          'max' are separated by a colon character. If 'max' is omitted, then
          the range includes all values that are greater than or equal to 'min'.
          If 'min' is omitted, then the range includes all values that are less
-         than or equal to 'max'.
+         than or equal to 'max'. Omitting both 'min' and 'max' at the same time
+         is not allowed.
 ;
          Integer
 ;
@@ -2528,8 +2557,8 @@ save_
                                    DESCRIPTION_EXAMPLE  ENUMERATION  IMPORT
                                    METHOD  NAME  TYPE  UNITS]
          Category    Mandatory    ['_definition.id'  '_definition.scope'
-                                   '_definition.class'  '_name.category_id'
-                                   '_name.object_id']
+                                   '_definition.class'  '_definition.update'
+                                   '_name.category_id'  '_name.object_id']
          Category    Recommended  ['_category_key.name'  '_description.text']
          Category    Prohibited   [ALIAS  DICTIONARY  ENUMERATION  TYPE  UNITS]
          Item        Mandatory    ['_definition.id'  '_definition.update'
@@ -3040,7 +3069,7 @@ save_
        by explicitly specifying that it adheres to the formal grammar
        provided in SemVer version 2.0.0.
 ;
-         4.2.0                    2023-11-14
+         4.2.0                    2025-07-04
 ;
        # Please update the date above and describe the change below until
        # ready for the next release
@@ -3082,4 +3111,14 @@ save_
        Updated the description of the 'Symop' content type.
 
        Updated the definition of the _method.expression attribute.
+
+       Updated definition of the _alias.deprecation_date attribute.
+       Updated definition of the _alias.dictionary_uri attribute.
+       Added the _alias.dictionary_version attribute.
+
+       Added _definition.update to the list of attributes that are mandatory
+       in the 'Category' scope.
+
+       Clarified that empty range values that include neither the upper nor
+       the lower bound are not allowed.
 ;
