@@ -40,7 +40,7 @@ jobs:
           uses: actions/checkout@v4
 
         - name: check_ddlm
-          uses: COMCIFS/dictionary_check_action@main
+          uses: COMCIFS/dictionary_check_action@update-cod-revision
           id: ddlm_check
   layout:
     runs-on: ubuntu-latest
