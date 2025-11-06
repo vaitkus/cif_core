@@ -308,7 +308,7 @@ save_diffrn.ambient_temperature_lt
 ;
     _name.category_id             diffrn
     _name.object_id               ambient_temperature_lt
-    _type.purpose                 Numbers
+    _type.purpose                 Number
     _type.source                  Recorded
     _type.container               Single
     _type.contents                Real
@@ -347,7 +347,7 @@ save_diffrn.crystal_support
 ;
     _name.category_id             diffrn
     _name.object_id               crystal_support
-    _type.purpose                 Describe
+    _type.purpose                 Describes
     _type.source                  Recorded
     _type.container               Single
     _type.contents                Text
