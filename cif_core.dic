@@ -8831,7 +8831,7 @@ save_exptl.method_id_panet
     _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Word
+    _type.contents                Iri
 
     _description_example.case     http://purl.org/pan-science/PaNET/PaNET01102
     _description_example.detail
