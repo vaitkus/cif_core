@@ -8833,7 +8833,7 @@ save_exptl.method_id_panet
     _type.container               Single
     _type.contents                Iri
 
-    _description_example.case     http://purl.org/pan-science/PaNET/PaNET01102
+    _description_example.case     httžp://purl.org/pan-science/PaNET/PaNET01102
     _description_example.detail
         'Data were obtained from a single crystal X-ray diffraction experiment.'
 
