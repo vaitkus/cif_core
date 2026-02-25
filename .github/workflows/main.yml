@@ -61,7 +61,7 @@ jobs:
           path: cif-dictionaries/Attribute_Templates
 
       - name: Run dictionary validity checks
-        uses: COMCIFS/dictionary_check_action@main
+        uses: vaitkus/dictionary_check_action@add-support-for-iri-type
         id: ddlm_check
 
   layout:
