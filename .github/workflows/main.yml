@@ -6,12 +6,12 @@ name: CIFSyntaxandStyleCheck
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ '*' ]
     paths-ignore:
             - '.github/**'
 
   pull_request:
-    branches: [ master ]
+    branches: [ '*' ]
     paths-ignore:
             - '.github/**'
   workflow_dispatch:   
@@ -45,8 +45,9 @@ jobs:
       - name: Checkout the DDLm reference dictionary
         uses: actions/checkout@v4
         with:
-          repository: COMCIFS/DDLm
+          repository: vaitkus/DDLm
           path: cif-dictionaries/DDLm
+          ref: add-iri-type-contents
 
       - name: Checkout enumeration templates
         uses: actions/checkout@v4
